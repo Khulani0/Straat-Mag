@@ -1,0 +1,22 @@
+---
+// The Money Line: the signature device. One big verified figure (or the key
+// date when a story genuinely has no defining number), underlined in Taxi
+// Yellow, with a one-line explanation beneath it.
+interface Props {
+  stat: string;
+  caption?: string;
+}
+
+const { stat, caption } = Astro.props;
+---
+
+<div class="money-line">
+  <p class="stat">{stat}</p>
+  {caption && <p class="stat-caption">{caption}</p>}
+</div>
+
+<style>
+  .money-line .stat {
+    margin: 0;
+  }
+</style>

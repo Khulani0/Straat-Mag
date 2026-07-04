@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import MoneyLine from '../../components/MoneyLine.astro';
 import { sectionBySlug } from '../../consts';
 
 export async function getStaticPaths() {
@@ -14,39 +15,63 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const { Content } = await render(article);
 const section = sectionBySlug(article.data.section);
+const dateLabel = article.data.date.toLocaleDateString('en-ZA', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
 ---
 
 <Base title={article.data.title} description={article.data.dek}>
-  <article>
-    <p>{section?.name}</p>
-    <h1>{article.data.title}</h1>
-    <p>{article.data.dek}</p>
-    <p>
-      {article.data.date.toLocaleDateString('en-ZA', { day: 'numeric', month: 'long', year: 'numeric' })}
-      · {article.data.readingTime}
-    </p>
-    {
-      article.data.moneyLineStat && (
-        <div class="money-line">
-          <p><strong>{article.data.moneyLineStat}</strong></p>
-          <p>{article.data.moneyLineCaption}</p>
-        </div>
-      )
-    }
-    <Content />
-    {
-      article.data.sources.length > 0 && (
-        <section>
-          <h2>Sources</h2>
-          <ul>
-            {article.data.sources.map((url) => (
-              <li>
-                <a href={url} rel="noopener noreferrer">{url}</a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )
-    }
-  </article>
+  <div class="wrap">
+    <article>
+      <header class="article-head">
+        {
+          section && (
+            <p class="eyebrow">
+              <a href={`/section/${section.slug}`}>{section.name}</a>
+            </p>
+          )
+        }
+        <h1>{article.data.title}</h1>
+        <p class="dek">{article.data.dek}</p>
+        <span class="meta">{dateLabel} · {article.data.readingTime}</span>
+        {
+          article.data.heroSvg && (
+            <figure class="article-hero">
+              <img src={article.data.heroSvg} alt="" loading="eager" />
+            </figure>
+          )
+        }
+        {
+          article.data.moneyLineStat && (
+            <MoneyLine stat={article.data.moneyLineStat} caption={article.data.moneyLineCaption} />
+          )
+        }
+      </header>
+
+      <div class="article-body">
+        <Content />
+      </div>
+
+      {
+        article.data.sources.length > 0 && (
+          <footer class="article-sources">
+            <p class="eyebrow">Sources</p>
+            <ul>
+              {article.data.sources.map((url) => (
+                <li>
+                  <a href={url} rel="noopener noreferrer">{url}</a>
+                </li>
+              ))}
+            </ul>
+            <p class="verified-note">
+              Every figure in this article was checked against the sources above before
+              publication.
+            </p>
+          </footer>
+        )
+      }
+    </article>
+  </div>
 </Base>

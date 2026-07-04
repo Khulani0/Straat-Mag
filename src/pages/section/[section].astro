@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import StoryBlock from '../../components/StoryBlock.astro';
 import { SECTIONS } from '../../consts';
 
 export async function getStaticPaths() {
@@ -17,20 +18,19 @@ const articles = (await getCollection('articles', (a) => a.data.section === sect
 ---
 
 <Base title={section.name} description={section.description}>
-  <h1>{section.name}</h1>
-  <p>{section.description}</p>
-  {
-    articles.length === 0 ? (
-      <p>Articles for this section are in production.</p>
-    ) : (
-      <ul>
-        {articles.map((a) => (
-          <li>
-            <a href={`/articles/${a.id}`}>{a.data.title}</a>
-            <p>{a.data.dek}</p>
-          </li>
-        ))}
-      </ul>
-    )
-  }
+  <div class="wrap section-head">
+    <h1>{section.name}</h1>
+    <p class="dek">{section.description}</p>
+  </div>
+  <div class="wrap section-list">
+    {
+      articles.length === 0 ? (
+        <div class="empty-note">
+          <p class="dek">Articles for this section are in production.</p>
+        </div>
+      ) : (
+        articles.map((a) => <StoryBlock article={a} />)
+      )
+    }
+  </div>
 </Base>

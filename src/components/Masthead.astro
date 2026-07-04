@@ -1,0 +1,26 @@
+---
+import { ISSUE_NUMBER, ISSUE_DATE, SECTIONS } from '../consts';
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="masthead">
+  <div class="wrap mast-top">
+    <a class="wordmark" href="/" aria-label="Straat Mag home">STRAAT<span class="mag">MAG</span></a>
+    <p class="issue-line">Issue {ISSUE_NUMBER} · {ISSUE_DATE}</p>
+  </div>
+  <nav class="wrap mast-nav" aria-label="Sections">
+    {
+      SECTIONS.map((s) => (
+        <a
+          href={`/section/${s.slug}`}
+          aria-current={currentPath === `/section/${s.slug}` ? 'page' : undefined}
+        >
+          {s.name}
+        </a>
+      ))
+    }
+    <a href="/about" aria-current={currentPath === '/about' ? 'page' : undefined}>About</a>
+    <a href="/subscribe" aria-current={currentPath === '/subscribe' ? 'page' : undefined}>Subscribe</a>
+  </nav>
+</header>

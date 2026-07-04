@@ -1,7 +1,8 @@
 ---
-// Minimal Phase 0 shell. The full design system (masthead, tokens, fonts,
-// Money Line component) is built in Phase 1 and will replace this styling.
-import { SITE_TITLE, SITE_DESCRIPTION, ISSUE_NUMBER, ISSUE_DATE, SECTIONS } from '../consts';
+import '../styles/global.css';
+import Masthead from '../components/Masthead.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 interface Props {
   title?: string;
@@ -9,7 +10,7 @@ interface Props {
 }
 
 const { title, description = SITE_DESCRIPTION } = Astro.props;
-const pageTitle = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
+const pageTitle = title ? `${title} | ${SITE_TITLE}` : `${SITE_TITLE} · Intelligence for South African entrepreneurs`;
 ---
 
 <!doctype html>
@@ -18,28 +19,23 @@ const pageTitle = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Space+Grotesk:wght@400;500;700&display=swap"
+    />
     <title>{pageTitle}</title>
   </head>
   <body>
-    <header>
-      <p><a href="/"><strong>STRAAT MAG</strong></a></p>
-      <p>Issue {ISSUE_NUMBER} · {ISSUE_DATE}</p>
-      <nav>
-        {SECTIONS.map((s) => <a href={`/section/${s.slug}`}>{s.name}</a>)}
-        <a href="/about">About</a>
-        <a href="/subscribe">Subscribe</a>
-      </nav>
-    </header>
+    <Masthead />
     <main>
       <slot />
     </main>
-    <footer>
-      <!-- Beehiiv email signup embed placeholder: real embed code to be pasted here later. -->
-      <div id="beehiiv-embed-placeholder">[ Email signup coming soon ]</div>
-      <p>
-        Straat Mag is researched with AI and edited by humans. Every figure is sourced.
-        <a href="/about">About us</a>
-      </p>
-    </footer>
+    <Footer />
   </body>
 </html>

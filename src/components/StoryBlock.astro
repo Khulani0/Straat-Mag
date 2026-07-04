@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { sectionBySlug } from '../consts';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+  showEyebrow?: boolean;
+}
+
+const { article, showEyebrow = false } = Astro.props;
+const section = sectionBySlug(article.data.section);
+const dateLabel = article.data.date.toLocaleDateString('en-ZA', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<article class="story">
+  {showEyebrow && section && <p class="eyebrow">{section.name}</p>}
+  <h3><a href={`/articles/${article.id}`}>{article.data.title}</a></h3>
+  <p class="dek">{article.data.dek}</p>
+  <span class="meta">{dateLabel} · {article.data.readingTime}</span>
+</article>
