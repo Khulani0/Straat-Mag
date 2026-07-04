@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { SECTIONS, ISSUE_NUMBER } from '../consts';
+
+const articles = (await getCollection('articles')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<Base>
+  <h1>Issue {ISSUE_NUMBER}</h1>
+  {
+    articles.length === 0 ? (
+      <p>The launch issue is in production.</p>
+    ) : (
+      SECTIONS.map((section) => {
+        const inSection = articles.filter((a) => a.data.section === section.slug);
+        if (inSection.length === 0) return null;
+        return (
+          <section>
+            <h2>{section.name}</h2>
+            <ul>
+              {inSection.map((a) => (
+                <li>
+                  <a href={`/articles/${a.id}`}>{a.data.title}</a>
+                  <p>{a.data.dek}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })
+    )
+  }
+</Base>

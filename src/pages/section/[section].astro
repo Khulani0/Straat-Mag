@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { SECTIONS } from '../../consts';
+
+export async function getStaticPaths() {
+  return SECTIONS.map((section) => ({
+    params: { section: section.slug },
+    props: { section },
+  }));
+}
+
+const { section } = Astro.props;
+const articles = (await getCollection('articles', (a) => a.data.section === section.slug)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<Base title={section.name} description={section.description}>
+  <h1>{section.name}</h1>
+  <p>{section.description}</p>
+  {
+    articles.length === 0 ? (
+      <p>Articles for this section are in production.</p>
+    ) : (
+      <ul>
+        {articles.map((a) => (
+          <li>
+            <a href={`/articles/${a.id}`}>{a.data.title}</a>
+            <p>{a.data.dek}</p>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</Base>

@@ -1,0 +1,52 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { sectionBySlug } from '../../consts';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((article) => ({
+    params: { slug: article.id },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+const section = sectionBySlug(article.data.section);
+---
+
+<Base title={article.data.title} description={article.data.dek}>
+  <article>
+    <p>{section?.name}</p>
+    <h1>{article.data.title}</h1>
+    <p>{article.data.dek}</p>
+    <p>
+      {article.data.date.toLocaleDateString('en-ZA', { day: 'numeric', month: 'long', year: 'numeric' })}
+      · {article.data.readingTime}
+    </p>
+    {
+      article.data.moneyLineStat && (
+        <div class="money-line">
+          <p><strong>{article.data.moneyLineStat}</strong></p>
+          <p>{article.data.moneyLineCaption}</p>
+        </div>
+      )
+    }
+    <Content />
+    {
+      article.data.sources.length > 0 && (
+        <section>
+          <h2>Sources</h2>
+          <ul>
+            {article.data.sources.map((url) => (
+              <li>
+                <a href={url} rel="noopener noreferrer">{url}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </article>
+</Base>
