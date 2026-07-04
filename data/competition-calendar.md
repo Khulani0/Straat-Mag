@@ -142,6 +142,31 @@ SEFA, SEDA and the Co-operative Banks Development Agency merged into a single ag
 - 2026 cycle: applications closed 28 April 2026. Finalists and grand finale later in 2026. Next cycle expected to open around March 2027.
 - Source: https://africabusinessheroes.org/en/the-prize/application-guidelines (accessed 4 July 2026)
 
+## PRIVATE AND DFI-BACKED PIPES (rolling, apply via the named local channel)
+
+### Absa SMME Fund and ESD programmes | VERIFIED
+
+- What: Loans R5,000 to R3 million (up to 5 years) for 100 percent black-owned SMMEs holding government or corporate contracts; corporate-partnered ESD programmes; November 2025 Absa-HEINEKEN R1,2 billion drive (R600m ESD plus R600m co-lending).
+- Source: http://www.esdsa.com/absa-smme-fund.html (accessed 4 July 2026)
+- Source: https://iol.co.za/business-report/companies/2025-11-18-absa-and-heineken-beverages-launch-r12bn-funding-drive-to-strengthen-black-owned-smes/ (accessed 4 July 2026)
+
+### Standard Bank ESD and development programmes | VERIFIED
+
+- What: Enterprise and supplier development for majority black-owned businesses; 12-week funding-readiness skills programme; Basali Development Programme for women entrepreneurs; AfDB partnership (R3,6 billion social bond plus US$200 million risk participation agreement).
+- Source: https://www.standardbank.co.za/southafrica/business/products-and-services/business-solutions/industry/enterprise-development-solutions-frequently-asked-questions (accessed 4 July 2026)
+- Source: https://www.afdb.org/en/news-and-events/press-releases/african-development-bank-and-standard-bank-unite-support-smmes-and-boost-trade-81237 (accessed 4 July 2026)
+
+### DFI money via FirstRand/FNB | VERIFIED
+
+- What: IFC US$100 million MSME facility (September 2025) plus risk-sharing on up to R1,8 billion of SME loans (women-owned, climate-smart agriculture priority); AfDB US$310 million package for MSMEs, women entrepreneurs and agribusinesses. Access through FNB business lending channels.
+- Source: https://www.afdb.org/en/news-and-events/press-releases/african-development-bank-approves-310-million-financial-package-firstrand-bank-scale-lending-msmes-women-entrepreneurs-and-agribusinesses-south-africa-88585 (accessed 4 July 2026)
+
+### Mastercard Foundation vehicles | VERIFIED (indirect access)
+
+- What: Africa Growth Fund (US$200 million fund-of-funds investing through African investment funds) and Fund for Resilience and Prosperity (US$126 million, work opportunities for young people through SMEs in 20 countries). Access via investee funds and implementing partners, not direct application.
+- Source: https://mastercardfdn.org/en/what-we-do/our-programs/africa-growth-fund/ (accessed 4 July 2026)
+- Source: https://frp.org/ (accessed 4 July 2026)
+
 ## NEEDS VERIFICATION BEFORE ANY USE
 
 ### Eskom Business Investment Competition | CONFIRM

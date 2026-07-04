@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Foreign development finance flowing through local banks to small businesses">
+  <rect width="1200" height="500" fill="#FAFAF6"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold">
+    <text x="60" y="100" font-size="26" fill="#141414">IFC · AfDB · MASTERCARD FDN</text>
+    <text x="60" y="470" font-size="17" fill="#5C6670" font-weight="normal">YOU APPLY AT THE LOCAL END OF THE PIPE</text>
+  </g>
+  <g stroke="#141414" stroke-width="8" fill="none">
+    <path d="M180 130 L180 240 L400 240"/>
+    <path d="M600 130 L600 240"/>
+    <path d="M1020 130 L1020 240 L800 240"/>
+  </g>
+  <rect x="400" y="200" width="400" height="80" fill="#141414"/>
+  <text x="440" y="252" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="26" fill="#F2B705">LOCAL BANKS + FUNDS</text>
+  <g stroke="#F2B705" stroke-width="8">
+    <line x1="480" y1="280" x2="480" y2="370"/>
+    <line x1="600" y1="280" x2="600" y2="370"/>
+    <line x1="720" y1="280" x2="720" y2="370"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="22" fill="#141414">
+    <text x="380" y="415">SMME</text>
+    <text x="555" y="415">SMME</text>
+    <text x="700" y="415">SMME</text>
+  </g>
+</svg>

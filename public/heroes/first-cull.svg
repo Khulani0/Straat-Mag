@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="A funnel of applications narrowing through four screens">
+  <rect width="1200" height="500" fill="#FAFAF6"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold">
+    <text x="60" y="80" font-size="30" fill="#141414">THE FIRST CULL IS MECHANICAL</text>
+    <polygon points="100,130 1100,130 800,420 400,420" fill="#141414"/>
+    <g fill="#FAFAF6" font-size="19">
+      <text x="480" y="185">1 ELIGIBILITY</text>
+      <text x="490" y="250">2 COMPLETENESS</text>
+      <text x="500" y="315">3 MANDATE FIT</text>
+      <text x="510" y="380">4 VIABLE NUMBERS</text>
+    </g>
+    <rect x="400" y="420" width="400" height="14" fill="#F2B705"/>
+    <text x="60" y="475" font-size="17" fill="#5C6670" font-weight="normal">PREPARATION, NOT POTENTIAL, DECIDES WHO GETS READ</text>
+  </g>
+</svg>

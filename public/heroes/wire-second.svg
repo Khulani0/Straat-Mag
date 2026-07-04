@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="The Wire second edition ticker of briefs">
+  <rect width="1200" height="500" fill="#141414"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold">
+    <text x="60" y="140" font-size="90" fill="#FAFAF6" letter-spacing="-3">THE WIRE</text>
+    <rect x="60" y="170" width="500" height="12" fill="#F2B705"/>
+    <text x="580" y="150" font-size="30" fill="#5C6670">/02</text>
+    <text x="60" y="260" font-size="26" fill="#B3352C">AWIEF: 3 AUG</text>
+    <text x="440" y="260" font-size="26" fill="#FAFAF6">FIRSTRAND +$310M</text>
+    <text x="60" y="320" font-size="26" fill="#FAFAF6">ABSA-HEINEKEN R1,2BN</text>
+    <text x="640" y="320" font-size="26" fill="#F2B705">EC ROADS R1,4BN</text>
+    <text x="60" y="380" font-size="26" fill="#F2B705">THOLOANA WATCH</text>
+    <text x="480" y="380" font-size="26" fill="#FAFAF6">ANZISHA: SPRING</text>
+    <text x="60" y="455" font-size="17" fill="#5C6670" font-weight="normal">EVERY BRIEF VERIFIED · EVERY DATE SOURCED · ISSUE 001</text>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Chart of the quarter's contract stories: awarded, contested and investigated values">
+  <rect width="1200" height="500" fill="#FAFAF6"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="80" font-size="30" font-weight="bold" fill="#141414">THE QUARTER IN CONTRACTS</text>
+    <rect x="60" y="330" width="240" height="60" fill="#F2B705"/>
+    <text x="60" y="430" font-size="20" font-weight="bold" fill="#141414">R1,4bn</text>
+    <text x="60" y="458" font-size="14" fill="#5C6670">SANRAL EC · AWARDED</text>
+    <rect x="400" y="215" width="240" height="175" fill="#141414"/>
+    <text x="400" y="430" font-size="20" font-weight="bold" fill="#141414">R9,5bn</text>
+    <text x="400" y="458" font-size="14" fill="#5C6670">SANRAL · IN COURT</text>
+    <rect x="740" y="120" width="240" height="270" fill="#B3352C"/>
+    <text x="740" y="430" font-size="20" font-weight="bold" fill="#141414">R21bn</text>
+    <text x="740" y="458" font-size="14" fill="#5C6670">ESKOM DIESEL · PROBED</text>
+    <line x1="60" y1="390" x2="1140" y2="390" stroke="#141414" stroke-width="3"/>
+  </g>
+</svg>

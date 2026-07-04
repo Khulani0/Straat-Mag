@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="The bid-readiness folder and its documents">
+  <rect width="1200" height="500" fill="#141414"/>
+  <g>
+    <path d="M100 140 L100 400 L520 400 L520 170 L300 170 L270 140 Z" fill="#F2B705"/>
+    <rect x="140" y="200" width="340" height="14" fill="#141414"/>
+    <rect x="140" y="240" width="300" height="14" fill="#141414"/>
+    <rect x="140" y="280" width="320" height="14" fill="#141414"/>
+    <rect x="140" y="320" width="260" height="14" fill="#141414"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#FAFAF6" font-size="27">
+    <text x="600" y="180">CSD · MAAA NUMBER</text>
+    <text x="600" y="235">SARS TCS PIN</text>
+    <text x="600" y="290">B-BBEE AFFIDAVIT</text>
+    <text x="600" y="345">SBD FORMS, SIGNED</text>
+  </g>
+  <text x="600" y="410" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#5C6670">THE FOLDER WALKS YOU THROUGH ROOM ONE</text>
+</svg>

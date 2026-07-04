@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="The four banks and their small business funding channels">
+  <rect width="1200" height="500" fill="#FAFAF6"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold">
+    <text x="60" y="90" font-size="30" fill="#141414">WHERE THE BANK MONEY SITS</text>
+    <rect x="60" y="140" width="250" height="150" fill="#141414"/>
+    <text x="85" y="200" font-size="26" fill="#F2B705">FNB</text>
+    <text x="85" y="245" font-size="17" fill="#FAFAF6" font-weight="normal">Vumela + IFC/AfDB</text>
+    <rect x="340" y="140" width="250" height="150" fill="#141414"/>
+    <text x="365" y="200" font-size="26" fill="#F2B705">ABSA</text>
+    <text x="365" y="245" font-size="17" fill="#FAFAF6" font-weight="normal">SMME Fund + ESD</text>
+    <rect x="620" y="140" width="250" height="150" fill="#141414"/>
+    <text x="645" y="200" font-size="26" fill="#F2B705">STANDARD</text>
+    <text x="645" y="245" font-size="17" fill="#FAFAF6" font-weight="normal">ESD + AfDB deal</text>
+    <rect x="900" y="140" width="240" height="150" fill="#141414"/>
+    <text x="925" y="200" font-size="26" fill="#F2B705">NEDBANK</text>
+    <text x="925" y="245" font-size="17" fill="#FAFAF6" font-weight="normal">Pitch and Polish</text>
+    <text x="60" y="380" font-size="22" fill="#141414" font-weight="normal">The branch says no. The development machinery exists to say yes.</text>
+  </g>
+  <rect x="60" y="420" width="1080" height="10" fill="#F2B705"/>
+</svg>

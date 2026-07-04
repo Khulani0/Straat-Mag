@@ -19,14 +19,14 @@ Statuses: planned / verified (research done, facts confirmed) / written / killed
 
 | # | Section | Working title | Status |
 | --- | --- | --- | --- |
-| 9 | Capital | SEDFA loans demystified (former SEFA products) | planned |
-| 10 | Capital | The verified guide to bank SMME funds and enterprise development money | planned |
-| 11 | The Ledger | The biggest verified government contract awards of the past quarter | planned |
-| 12 | Winners | Verified Nedbank Pitch and Polish winner story (Santam replaced: no current Santam competition verifiable, see killed-articles.md) | planned |
-| 13 | The Playbook | How to write a funding application that survives the first cull | planned |
-| 14 | The Playbook | Bid-readiness 101: documents every SMME needs before chasing a tender | planned |
-| 15 | Capital | Foreign and DFI money reachable from SA | planned |
-| 16 | The Wire | Second briefs set from the competition calendar | planned |
+| 9 | Capital | SEDFA loans demystified (former SEFA products) | written |
+| 10 | Capital | The verified guide to bank SMME funds and enterprise development money | written |
+| 11 | The Ledger | The biggest verified government contract awards of the past quarter | written |
+| 12 | Winners | Verified Nedbank Pitch and Polish winner story (Santam replaced: no current Santam competition verifiable, see killed-articles.md) | written |
+| 13 | The Playbook | How to write a funding application that survives the first cull | written |
+| 14 | The Playbook | Bid-readiness 101: documents every SMME needs before chasing a tender | written |
+| 15 | Capital | Foreign and DFI money reachable from SA | written |
+| 16 | The Wire | Second briefs set from the competition calendar | written |
 
 ## Batch 3 (edge and voice)
 

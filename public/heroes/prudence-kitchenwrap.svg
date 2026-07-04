@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Editorial illustration of a kitchen cabinet being wrapped in a new finish">
+  <rect width="1200" height="500" fill="#141414"/>
+  <g stroke="#FAFAF6" stroke-width="4" fill="none">
+    <rect x="100" y="120" width="180" height="260"/>
+    <line x1="190" y1="120" x2="190" y2="380"/>
+    <circle cx="170" cy="250" r="6" fill="#FAFAF6"/>
+    <circle cx="210" cy="250" r="6" fill="#FAFAF6"/>
+  </g>
+  <g>
+    <rect x="300" y="120" width="180" height="260" fill="#F2B705"/>
+    <line x1="390" y1="120" x2="390" y2="380" stroke="#141414" stroke-width="4"/>
+    <circle cx="370" cy="250" r="6" fill="#141414"/>
+    <circle cx="410" cy="250" r="6" fill="#141414"/>
+    <path d="M480 120 L520 100 L520 400 L480 380 Z" fill="#F2B705" opacity="0.5"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold">
+    <text x="580" y="190" font-size="46" fill="#FAFAF6" letter-spacing="-1">NO DUST.</text>
+    <text x="580" y="260" font-size="46" fill="#F2B705" letter-spacing="-1">NO DEMOLITION.</text>
+    <text x="580" y="330" font-size="46" fill="#FAFAF6" letter-spacing="-1">R1 MILLION.</text>
+    <text x="580" y="400" font-size="19" fill="#5C6670" font-weight="normal">THE KITCHEN WRAP COMPANY · PITCH AND POLISH 2025</text>
+  </g>
+</svg>
