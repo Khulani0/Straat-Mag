@@ -5,7 +5,9 @@ import StoryBlock from '../components/StoryBlock.astro';
 import { SECTIONS, ISSUE_NUMBER, ISSUE_DATE, sectionBySlug } from '../consts';
 
 const articles = (await getCollection('articles')).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  (a, b) =>
+    Number(b.data.featured) - Number(a.data.featured) ||
+    b.data.date.valueOf() - a.data.date.valueOf()
 );
 
 const lead = articles[0];

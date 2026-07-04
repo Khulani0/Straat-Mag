@@ -20,6 +20,8 @@ const articles = defineCollection({
     sources: z.array(z.string().url()).default([]),
     // Path to the article's SVG hero illustration, e.g. /heroes/sefa-map.svg
     heroSvg: z.string().optional(),
+    // Featured article leads the homepage for the current issue.
+    featured: z.boolean().default(false),
     // The Money Line: the lead verified figure (or key date) and its one-line explanation.
     // Optional in the schema so drafts can compile, but every published article gets one.
     moneyLineStat: z.string().optional(),

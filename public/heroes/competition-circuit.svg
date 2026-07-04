@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="The annual competition circuit drawn as a calendar of deadlines">
+  <rect width="1200" height="500" fill="#FAFAF6"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="90" font-size="34" font-weight="bold" fill="#141414">THE CIRCUIT RUNS ALL YEAR</text>
+    <line x1="60" y1="260" x2="1140" y2="260" stroke="#141414" stroke-width="3"/>
+    <g font-size="15" fill="#5C6670" font-weight="bold">
+      <text x="60" y="300">OCT</text>
+      <text x="240" y="300">FEB</text>
+      <text x="420" y="300">MAR</text>
+      <text x="600" y="300">APR</text>
+      <text x="780" y="300">JUL</text>
+      <text x="960" y="300">AUG</text>
+    </g>
+    <g>
+      <circle cx="75" cy="260" r="14" fill="#141414"/>
+      <circle cx="255" cy="260" r="14" fill="#141414"/>
+      <circle cx="435" cy="260" r="14" fill="#141414"/>
+      <circle cx="615" cy="260" r="14" fill="#141414"/>
+      <circle cx="795" cy="260" r="14" fill="#F2B705" stroke="#141414" stroke-width="3"/>
+      <circle cx="975" cy="260" r="14" fill="#F2B705" stroke="#141414" stroke-width="3"/>
+    </g>
+    <g font-size="16" font-weight="bold" fill="#141414">
+      <text x="60" y="200">ANZISHA OPENS</text>
+      <text x="240" y="230">SAB FDN</text>
+      <text x="420" y="200">P&amp;P CLOSES</text>
+      <text x="600" y="230">ABH · EDHE</text>
+      <text x="780" y="200">YOU ARE HERE</text>
+      <text x="960" y="230">AWIEF CLOSES</text>
+    </g>
+    <text x="60" y="420" font-size="20" fill="#141414">Plan in September, enter five. React to posters, enter one.</text>
+  </g>
+  <rect x="60" y="450" width="1080" height="10" fill="#F2B705"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Three columns comparing grant, debt and equity funding">
+  <rect width="1200" height="500" fill="#141414"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold">
+    <rect x="80" y="140" width="300" height="240" fill="#F2B705"/>
+    <text x="105" y="200" font-size="40" fill="#141414">GRANT</text>
+    <text x="105" y="245" font-size="20" font-weight="normal" fill="#141414">Costs nothing.</text>
+    <text x="105" y="275" font-size="20" font-weight="normal" fill="#141414">Buys the start.</text>
+    <rect x="450" y="140" width="300" height="240" fill="none" stroke="#FAFAF6" stroke-width="3"/>
+    <text x="475" y="200" font-size="40" fill="#FAFAF6">DEBT</text>
+    <text x="475" y="245" font-size="20" font-weight="normal" fill="#FAFAF6">Keeps your shares.</text>
+    <text x="475" y="275" font-size="20" font-weight="normal" fill="#FAFAF6">Takes your margin.</text>
+    <rect x="820" y="140" width="300" height="240" fill="none" stroke="#FAFAF6" stroke-width="3"/>
+    <text x="845" y="200" font-size="40" fill="#FAFAF6">EQUITY</text>
+    <text x="845" y="245" font-size="20" font-weight="normal" fill="#FAFAF6">Shares your risk.</text>
+    <text x="845" y="275" font-size="20" font-weight="normal" fill="#FAFAF6">Forever.</text>
+    <text x="80" y="90" font-size="30" fill="#FAFAF6">THREE KINDS OF MONEY. ONE CORRECT ORDER.</text>
+    <text x="80" y="450" font-size="17" fill="#5C6670" font-weight="normal">SEQUENCE: GRANT FIRST · DEBT AGAINST REVENUE · EQUITY FOR SCALE</text>
+  </g>
+</svg>
