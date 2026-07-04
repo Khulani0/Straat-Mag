@@ -32,11 +32,11 @@ Statuses: planned / verified (research done, facts confirmed) / written / killed
 
 | # | Section | Working title | Status |
 | --- | --- | --- | --- |
-| 17 | The Ledger | Where procurement corruption risk actually sits | planned |
-| 18 | Capital | University and youth-track money: EDHE, incubators, student funds | planned |
-| 19 | Winners | One more verified winner profile (Cape Town or township-rooted) | planned |
-| 20 | The Playbook | Why most competition winners stall after the prize | planned |
-| 21 | The Playbook | Pitching to judges versus pitching to customers | planned |
-| 22 | Capital | Crowdfunding and community capital in SA | planned |
-| 23 | The Ledger | Data piece: one chart-led procurement or funding story | planned |
-| 24 | The Wire | Third briefs set plus closing-soon red-flag list | planned |
+| 17 | The Ledger | Where procurement corruption risk actually sits | written |
+| 18 | Capital | University and youth-track money: EDHE, incubators, student funds | written |
+| 19 | Winners | One more verified winner profile (Cape Town or township-rooted) | written |
+| 20 | The Playbook | Why most competition winners stall after the prize | written |
+| 21 | The Playbook | Pitching to judges versus pitching to customers | written |
+| 22 | Capital | Crowdfunding and community capital in SA | written |
+| 23 | The Ledger | Data piece: one chart-led procurement or funding story | written |
+| 24 | The Wire | Third briefs set plus closing-soon red-flag list | written |

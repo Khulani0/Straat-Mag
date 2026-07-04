@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Where irregular expenditure concentrates, from national to municipal government">
+  <rect width="1200" height="500" fill="#141414"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold">
+    <text x="60" y="90" font-size="30" fill="#FAFAF6">THE RISK IS NOT EVENLY SPREAD</text>
+    <rect x="60" y="150" width="1080" height="70" fill="none" stroke="#FAFAF6" stroke-width="2"/>
+    <text x="85" y="195" font-size="24" fill="#FAFAF6">NATIONAL AND PROVINCIAL: R42,5BN IRREGULAR IN A YEAR</text>
+    <rect x="60" y="250" width="1080" height="70" fill="none" stroke="#B3352C" stroke-width="3"/>
+    <text x="85" y="295" font-size="24" fill="#B3352C">METROS: 77% OF IRREGULAR SPEND BORN IN PROCUREMENT</text>
+    <rect x="60" y="350" width="1080" height="70" fill="#B3352C"/>
+    <text x="85" y="395" font-size="24" fill="#FAFAF6">MUNICIPAL AWARDS: 85% MADE OUTSIDE THE RULES</text>
+    <text x="60" y="470" font-size="17" fill="#5C6670" font-weight="normal">SOURCE: AUDITOR-GENERAL FINDINGS · BID WHERE THE RULES HOLD</text>
+  </g>
+</svg>
