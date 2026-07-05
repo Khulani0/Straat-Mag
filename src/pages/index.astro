@@ -12,13 +12,15 @@ const articles = (await getCollection('articles')).sort(
 
 const lead = articles[0];
 const leadSection = lead ? sectionBySlug(lead.data.section) : undefined;
+const heroFor = (a) => a.data.heroSvg ?? `/heroes/${a.id}.svg`;
 const rest = articles.slice(1);
 
 // The Big Numbers rail: standout Money Line stats from across the issue.
 const railPicks = rest.filter((a) => a.data.moneyLineStat && a.data.section !== 'wire').slice(0, 5);
 
 // Dark In Depth band: The Ledger's investigative and data pieces.
-const depthPicks = rest.filter((a) => a.data.section === 'ledger').slice(0, 3);
+// Two picks so the Ledger's own section band below keeps a full row.
+const depthPicks = rest.filter((a) => a.data.section === 'ledger').slice(0, 2);
 const depthIds = new Set(depthPicks.map((a) => a.id));
 
 // Wire briefs listed in their own band, newest first.
@@ -64,11 +66,9 @@ const bandSections = SECTIONS.filter((s) => s.slug !== 'wire');
                 )}
                 <span class="meta">{lead.data.readingTime}</span>
               </div>
-              {lead.data.heroSvg && (
-                <a class="lead-art" href={`/articles/${lead.id}`} tabindex="-1" aria-hidden="true">
-                  <img src={lead.data.heroSvg} alt="" loading="eager" />
-                </a>
-              )}
+              <a class="lead-art" href={`/articles/${lead.id}`} tabindex="-1" aria-hidden="true">
+                <img src={heroFor(lead)} alt="" loading="eager" />
+              </a>
             </article>
           )}
           {railPicks.length > 0 && (
@@ -98,11 +98,9 @@ const bandSections = SECTIONS.filter((s) => s.slug !== 'wire');
               <div class="depth-grid">
                 {depthPicks.map((a) => (
                   <article class="depth-card">
-                    {a.data.heroSvg && (
-                      <a href={`/articles/${a.id}`} tabindex="-1" aria-hidden="true">
-                        <img src={a.data.heroSvg} alt="" loading="lazy" />
-                      </a>
-                    )}
+                    <a href={`/articles/${a.id}`} tabindex="-1" aria-hidden="true">
+                      <img src={heroFor(a)} alt="" loading="lazy" />
+                    </a>
                     <h3><a href={`/articles/${a.id}`}>{a.data.title}</a></h3>
                     <p>{a.data.dek}</p>
                   </article>

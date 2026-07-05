@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Chart comparing unpaid overdue invoices: provincial departments hold R10,6 billion against R53 million for national departments">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Chart comparing unpaid overdue invoices at March 2025: provincial departments hold eighteen billion rand against 381 million rand for national departments">
   <rect width="1200" height="500" fill="#FAFAF6"/>
   <g font-family="Arial, Helvetica, sans-serif">
     <text x="60" y="70" font-size="28" font-weight="bold" fill="#141414">UNPAID PAST 30 DAYS AT YEAR END</text>
-    <text x="60" y="100" font-size="16" fill="#5C6670">Rand value of overdue supplier invoices, March 2024. Source: National Treasury</text>
-    <rect x="60" y="150" width="8" height="60" fill="#141414"/>
-    <text x="90" y="180" font-size="20" font-weight="bold" fill="#141414">NATIONAL: R53 MILLION</text>
-    <text x="90" y="205" font-size="15" fill="#5C6670">1,427 INVOICES</text>
+    <text x="60" y="100" font-size="16" fill="#5C6670">Rand value of overdue supplier invoices, March 2025. Source: National Treasury</text>
+    <rect x="60" y="150" width="24" height="60" fill="#141414"/>
+    <text x="105" y="180" font-size="20" font-weight="bold" fill="#141414">NATIONAL: R381 MILLION</text>
+    <text x="105" y="205" font-size="15" fill="#5C6670">2,437 INVOICES · 8 DEPARTMENTS</text>
     <rect x="60" y="250" width="1060" height="120" fill="#B3352C"/>
-    <text x="85" y="305" font-size="26" font-weight="bold" fill="#FAFAF6">PROVINCIAL: R10,6 BILLION</text>
-    <text x="85" y="340" font-size="16" fill="#FAFAF6">113,481 INVOICES · 200 TIMES THE NATIONAL EXPOSURE</text>
-    <text x="60" y="430" font-size="18" font-weight="bold" fill="#141414">Plus R35,1 billion paid during the year, but late.</text>
+    <text x="85" y="305" font-size="26" font-weight="bold" fill="#FAFAF6">PROVINCIAL: R18 BILLION</text>
+    <text x="85" y="340" font-size="16" fill="#FAFAF6">140,364 INVOICES · 47 TIMES THE NATIONAL EXPOSURE</text>
+    <text x="60" y="430" font-size="18" font-weight="bold" fill="#141414">Up 24% on the year before. The spike ran August 2024 to March 2025.</text>
     <text x="60" y="470" font-size="15" fill="#5C6670">CHECK WHICH SPHERE YOUR CUSTOMER SITS IN BEFORE YOU QUOTE</text>
   </g>
 </svg>

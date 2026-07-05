@@ -68,7 +68,7 @@ SEFA, SEDA and the Co-operative Banks Development Agency merged into a single ag
 
 ### Peo Pele Youth Fund | VERIFIED (new, launched June 2026)
 
-- What: New R300 million fund for youth-owned businesses, structured by business stage from start-up to growth. Builds on the Youth Challenge Fund. Implemented through SEDFA.
+- What: New R300 million fund for youth-owned businesses this year (about R900 million planned over three years), structured by business stage from start-up to growth. Concessionary terms: prime less 2 percent, capital repayment moratorium of up to 12 months, training attached. About 750 enterprises expected to benefit. Builds on the Youth Challenge Fund. Implemented through SEDFA. (Terms re-verified 5 July 2026.)
 - Who: Youth-owned businesses (DSBD youth definition, 18 to 35).
 - Launched: Youth Month 2026, QwaQwa, by Small Business Development Minister Stella Tembisa Ndabeni.
 - Source: https://www.gov.za/news/speeches/minister-stella-tembisa-ndabeni-youth-day-commemoration-and-launch-peo-pele-youth (accessed 4 July 2026)

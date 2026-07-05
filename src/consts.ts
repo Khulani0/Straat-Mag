@@ -1,11 +1,13 @@
-// Site-wide constants. Update ISSUE_NUMBER and ISSUE_DATE once per weekly issue.
+// Site-wide constants. The issue number and date live in data/settings.json
+// so they can be updated from the CMS without touching code.
+import settings from '../data/settings.json';
 
 export const SITE_TITLE = 'Straat Mag';
 export const SITE_DESCRIPTION =
   'A weekly online intelligence magazine for South African entrepreneurs: public procurement money flows, government and private funding, entrepreneurship competitions, and capital-raising strategy.';
 
-export const ISSUE_NUMBER = '001';
-export const ISSUE_DATE = 'Week of 6 July 2026';
+export const ISSUE_NUMBER = settings.issueNumber;
+export const ISSUE_DATE = settings.issueDate;
 
 // The five fixed sections. Every article belongs to exactly one of these.
 export const SECTIONS = [

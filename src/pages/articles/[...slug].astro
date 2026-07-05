@@ -15,6 +15,7 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const { Content } = await render(article);
 const section = sectionBySlug(article.data.section);
+const heroFor = (a) => a.data.heroSvg ?? `/heroes/${a.id}.svg`;
 const dateLabel = article.data.date.toLocaleDateString('en-ZA', {
   day: 'numeric',
   month: 'long',
@@ -43,13 +44,9 @@ const readNext = [
         <h1>{article.data.title}</h1>
         <p class="dek">{article.data.dek}</p>
         <span class="meta">{dateLabel} · {article.data.readingTime}</span>
-        {
-          article.data.heroSvg && (
-            <figure class="article-hero">
-              <img src={article.data.heroSvg} alt="" loading="eager" />
-            </figure>
-          )
-        }
+        <figure class="article-hero">
+          <img src={heroFor(article)} alt="" loading="eager" />
+        </figure>
         {
           article.data.moneyLineStat && (
             <MoneyLine stat={article.data.moneyLineStat} caption={article.data.moneyLineCaption} />
@@ -88,11 +85,9 @@ const readNext = [
           <div class="next-grid">
             {readNext.map((a) => (
               <article class="next-card">
-                {a.data.heroSvg && (
-                  <a href={`/articles/${a.id}`} tabindex="-1" aria-hidden="true">
-                    <img src={a.data.heroSvg} alt="" loading="lazy" />
-                  </a>
-                )}
+                <a href={`/articles/${a.id}`} tabindex="-1" aria-hidden="true">
+                  <img src={heroFor(a)} alt="" loading="lazy" />
+                </a>
                 <h3><a href={`/articles/${a.id}`}>{a.data.title}</a></h3>
                 <span class="meta">{a.data.readingTime}</span>
               </article>

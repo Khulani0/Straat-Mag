@@ -297,6 +297,7 @@ h4 {
   order: -1;
   display: block;
   border: var(--hairline);
+  align-self: start;
 }
 
 .lead-story .lead-art img {
@@ -1026,9 +1027,6 @@ h4 {
     order: 1;
   }
   .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .depth-grid {
     grid-template-columns: repeat(3, 1fr);
   }
   .footer-grid {

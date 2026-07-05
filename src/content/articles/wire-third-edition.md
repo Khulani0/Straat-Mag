@@ -15,8 +15,8 @@ sources:
   - "https://www.treasury.gov.za/comm_media/press/2024/Annual%20Report%20on%20non-compliance%20with%20payment%20of%20supplier's%20invoices%20within%2030%20days%20-%202023-24.pdf"
   - "https://htxt.co.za/2026/07/huawei-code4mzansi-highlights-importance-of-sas-township-economy/"
 heroSvg: "/heroes/wire-third.svg"
-moneyLineStat: "R35,1 billion"
-moneyLineCaption: "Paid to suppliers late by national and provincial departments in a single year, per Treasury's own report. Price your government work accordingly."
+moneyLineStat: "R18,4 billion"
+moneyLineCaption: "Owed to suppliers on invoices already past the 30-day legal deadline at the end of March 2025, per Treasury's latest report. Price your government work accordingly."
 ---
 
 **RED FLAG: AWIEF closes 3 August.** Final call in this issue: nominations for the 2026 AWIEF Awards for African women founders close 3 August at 23:59 CAT, with winners announced at the Cape Town conference in November. Free, self-nomination allowed, no excuse.
@@ -33,4 +33,4 @@ moneyLineCaption: "Paid to suppliers late by national and provincial departments
 
 **Campus tech money is real.** Huawei's first Code4Mzansi put R100,000 behind a student-led spaza-commerce platform (see Winners). Corporate developer challenges now belong on every young tech founder's competition calendar alongside the traditional circuit.
 
-**Stat of the week: 200 to 1.** Provincial departments held R10,6 billion in invoices unpaid past the 30-day deadline at last count; national departments held R53 million. Roughly two hundred times the exposure. Check which sphere your customer sits in before you quote.
+**Stat of the week: 47 to 1.** At the end of March 2025, provincial departments held R18 billion in invoices unpaid past the 30-day deadline; national departments held R381 million. Roughly 47 times the exposure, and 24 percent worse than the year before. Check which sphere your customer sits in before you quote.

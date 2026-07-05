@@ -1,0 +1,86 @@
+# Pages CMS configuration (https://pagescms.org)
+# Log in at app.pagescms.org with GitHub, open this repository, and you get
+# a clean editing screen for articles and issue settings. Every save is a
+# commit, and every commit redeploys the site on Vercel automatically.
+
+media:
+  input: public
+  output: /
+
+content:
+  - name: articles
+    label: Articles
+    type: collection
+    path: src/content/articles
+    view:
+      fields: [title, section, date, verified]
+      sort: [date]
+    fields:
+      - name: title
+        label: Headline
+        type: string
+        required: true
+      - name: dek
+        label: Dek (one-sentence standfirst under the headline)
+        type: string
+        required: true
+      - name: section
+        label: Section
+        type: select
+        required: true
+        options:
+          values:
+            - value: ledger
+              label: The Ledger
+            - value: capital
+              label: Capital
+            - value: winners
+              label: Winners
+            - value: playbook
+              label: The Playbook
+            - value: wire
+              label: The Wire
+      - name: date
+        label: Publication date
+        type: date
+        required: true
+      - name: readingTime
+        label: Reading time (e.g. 5 min read)
+        type: string
+        required: true
+      - name: verified
+        label: Verified (every figure checked against a source)
+        type: boolean
+        default: true
+      - name: featured
+        label: Featured (lead story on the homepage, only one per issue)
+        type: boolean
+        default: false
+      - name: moneyLineStat
+        label: Money Line stat (the one big verified figure, e.g. R710 million)
+        type: string
+      - name: moneyLineCaption
+        label: Money Line caption (one line explaining the stat)
+        type: string
+      - name: heroSvg
+        label: Hero image path (leave empty and artwork is generated automatically)
+        type: string
+      - name: sources
+        label: Sources (one URL per entry)
+        type: string
+        list: true
+      - name: body
+        label: Article body
+        type: rich-text
+
+  - name: settings
+    label: Issue settings
+    type: file
+    path: data/settings.json
+    fields:
+      - name: issueNumber
+        label: Issue number (e.g. 002)
+        type: string
+      - name: issueDate
+        label: Issue date line (e.g. Week of 13 July 2026)
+        type: string
