@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import StoryBlock from '../components/StoryBlock.astro';
+import ArticleCard from '../components/ArticleCard.astro';
 import { SECTIONS, ISSUE_NUMBER, ISSUE_DATE, sectionBySlug } from '../consts';
 
 const articles = (await getCollection('articles')).sort(
@@ -13,6 +13,19 @@ const articles = (await getCollection('articles')).sort(
 const lead = articles[0];
 const leadSection = lead ? sectionBySlug(lead.data.section) : undefined;
 const rest = articles.slice(1);
+
+// The Big Numbers rail: standout Money Line stats from across the issue.
+const railPicks = rest.filter((a) => a.data.moneyLineStat && a.data.section !== 'wire').slice(0, 5);
+
+// Dark In Depth band: The Ledger's investigative and data pieces.
+const depthPicks = rest.filter((a) => a.data.section === 'ledger').slice(0, 3);
+const depthIds = new Set(depthPicks.map((a) => a.id));
+
+// Wire briefs listed in their own band, newest first.
+const wireArticles = rest.filter((a) => a.data.section === 'wire');
+
+// Section bands cover everything else not already placed above.
+const bandSections = SECTIONS.filter((s) => s.slug !== 'wire');
 ---
 
 <Base>
@@ -31,40 +44,139 @@ const rest = articles.slice(1);
       </div>
     ) : (
       <>
-        {lead && (
-          <div class="wrap lead-story">
-            {leadSection && (
-              <p class="eyebrow">
-                <a href={`/section/${leadSection.slug}`}>{leadSection.name}</a>
-              </p>
-            )}
-            <h2><a href={`/articles/${lead.id}`}>{lead.data.title}</a></h2>
-            <p class="dek">{lead.data.dek}</p>
-            {lead.data.moneyLineStat && (
-              <div class="money-line lead-stat">
-                <p class="stat">{lead.data.moneyLineStat}</p>
-                {lead.data.moneyLineCaption && (
-                  <p class="stat-caption">{lead.data.moneyLineCaption}</p>
+        {/* Lead feature + numbers rail */}
+        <div class="wrap hero-row">
+          {lead && (
+            <article class="lead-story">
+              <div class="lead-text">
+                {leadSection && (
+                  <p class="eyebrow">
+                    <a href={`/section/${leadSection.slug}`}>{leadSection.name}</a>
+                  </p>
                 )}
+                <h2><a href={`/articles/${lead.id}`}>{lead.data.title}</a></h2>
+                <p class="dek">{lead.data.dek}</p>
+                {lead.data.moneyLineStat && (
+                  <p class="lead-stat-inline">
+                    {lead.data.moneyLineStat}
+                    {lead.data.moneyLineCaption && <small>{lead.data.moneyLineCaption}</small>}
+                  </p>
+                )}
+                <span class="meta">{lead.data.readingTime}</span>
               </div>
-            )}
-            <span class="meta">{lead.data.readingTime}</span>
-          </div>
-        )}
-        {SECTIONS.map((section) => {
-          const inSection = rest.filter((a) => a.data.section === section.slug);
-          if (inSection.length === 0) return null;
-          return (
-            <section class="wrap section-block">
-              <p class="eyebrow">
-                <a href={`/section/${section.slug}`}>{section.name}</a>
-              </p>
-              {inSection.map((a) => (
-                <StoryBlock article={a} />
+              {lead.data.heroSvg && (
+                <a class="lead-art" href={`/articles/${lead.id}`} tabindex="-1" aria-hidden="true">
+                  <img src={lead.data.heroSvg} alt="" loading="eager" />
+                </a>
+              )}
+            </article>
+          )}
+          {railPicks.length > 0 && (
+            <aside class="numbers-rail">
+              <p class="rail-title">The big numbers</p>
+              {railPicks.map((a, i) => (
+                <a class="rail-item" href={`/articles/${a.id}`}>
+                  <span class="rail-num">{i + 1}</span>
+                  <span>
+                    <span class="rail-stat">{a.data.moneyLineStat}</span>
+                    <span class="rail-label">{a.data.title}</span>
+                  </span>
+                </a>
               ))}
+            </aside>
+          )}
+        </div>
+
+        {/* Dark in-depth band */}
+        {depthPicks.length > 0 && (
+          <section class="depth-band">
+            <div class="wrap">
+              <div class="band-head">
+                <p class="band-title"><span class="tick">In depth</span> · The Ledger</p>
+                <a class="band-link" href="/section/ledger">All Ledger stories</a>
+              </div>
+              <div class="depth-grid">
+                {depthPicks.map((a) => (
+                  <article class="depth-card">
+                    {a.data.heroSvg && (
+                      <a href={`/articles/${a.id}`} tabindex="-1" aria-hidden="true">
+                        <img src={a.data.heroSvg} alt="" loading="lazy" />
+                      </a>
+                    )}
+                    <h3><a href={`/articles/${a.id}`}>{a.data.title}</a></h3>
+                    <p>{a.data.dek}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Section bands */}
+        <div class="wrap">
+          {bandSections.map((section, idx) => {
+            const inSection = rest.filter(
+              (a) =>
+                a.data.section === section.slug &&
+                !depthIds.has(a.id)
+            );
+            if (inSection.length === 0) return null;
+            const cards = inSection.slice(0, 3);
+            const extra = inSection.slice(3);
+            return (
+              <>
+                <section class="section-band">
+                  <div class="band-head">
+                    <p class="band-title"><a href={`/section/${section.slug}`}>{section.name}</a></p>
+                    <a class="band-link" href={`/section/${section.slug}`}>More {section.name}</a>
+                  </div>
+                  <div class="card-grid">
+                    {cards.map((a) => (
+                      <ArticleCard article={a} />
+                    ))}
+                  </div>
+                  {extra.length > 0 && (
+                    <div class="list-rows">
+                      {extra.map((a) => (
+                        <div class="list-row">
+                          <h3><a href={`/articles/${a.id}`}>{a.data.title}</a></h3>
+                          <span class="meta">{a.data.readingTime}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </section>
+                {idx === 0 && (
+                  <div class="newsletter-card">
+                    <p class="nl-title">One email a week. Every rand accounted for.</p>
+                    <p>
+                      Procurement intelligence, funding deadlines and verified winner stories,
+                      straight to your inbox. Free.
+                    </p>
+                    {/* BEEHIIV EMBED: replace the placeholder div below with the real Beehiiv embed code. */}
+                    <div class="nl-box">Email signup opens soon. The launch issue is live now.</div>
+                  </div>
+                )}
+              </>
+            );
+          })}
+
+          {/* Wire band */}
+          {wireArticles.length > 0 && (
+            <section class="wire-band">
+              <p class="wire-title">THE WIRE</p>
+              <p class="wire-sub">Deadlines, money moves and the stat of the week</p>
+              <div class="list-rows">
+                {wireArticles.map((a) => (
+                  <div class="list-row">
+                    <h3><a href={`/articles/${a.id}`}>{a.data.title}</a></h3>
+                    <span class="meta">{a.data.readingTime}</span>
+                  </div>
+                ))}
+              </div>
             </section>
-          );
-        })}
+          )}
+        </div>
       </>
     )
   }

@@ -1,18 +1,46 @@
 ---
+import { SECTIONS } from '../consts';
+
 const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <div class="footer-signup">
-      <p class="eyebrow">The weekly brief</p>
-      <!-- BEEHIIV EMBED: replace the placeholder div below with the real Beehiiv embed code. -->
-      <div class="beehiiv-placeholder" id="beehiiv-embed-placeholder">
-        Email signup opens soon. One issue a week: procurement intelligence, funding deadlines,
-        verified winner stories.
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="wordmark" href="/" aria-label="Straat Mag home">STRAAT<span class="mag">MAG</span></a>
+        <p>
+          Weekly intelligence on South African SMME money: procurement flows, funding, competitions
+          and capital strategy.
+        </p>
+      </div>
+      <div class="footer-col">
+        <p class="fc-title">Sections</p>
+        <ul>
+          {SECTIONS.map((s) => (
+            <li><a href={`/section/${s.slug}`}>{s.name}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="fc-title">Magazine</p>
+        <ul>
+          <li><a href="/">Current issue</a></li>
+          <li><a href="/about">About us</a></li>
+          <li><a href="/about">How we verify</a></li>
+          <li><a href="/subscribe">Subscribe</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-signup">
+        <p class="fc-title">The weekly brief</p>
+        <!-- BEEHIIV EMBED: replace the placeholder div below with the real Beehiiv embed code. -->
+        <div class="beehiiv-placeholder" id="beehiiv-embed-placeholder">
+          Email signup opens soon. One issue a week: procurement intelligence, funding deadlines,
+          verified winner stories.
+        </div>
       </div>
     </div>
-    <div class="footer-lines">
+    <div class="footer-bottom">
       <p>
         Straat Mag is researched with AI and edited by humans. Every figure is sourced.
         <a href="/about">Read how we work</a>.

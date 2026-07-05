@@ -20,6 +20,13 @@ const dateLabel = article.data.date.toLocaleDateString('en-ZA', {
   month: 'long',
   year: 'numeric',
 });
+
+// Read next: same section first, then the rest of the issue, never itself.
+const all = await getCollection('articles');
+const readNext = [
+  ...all.filter((a) => a.id !== article.id && a.data.section === article.data.section),
+  ...all.filter((a) => a.id !== article.id && a.data.section !== article.data.section),
+].slice(0, 3);
 ---
 
 <Base title={article.data.title} description={article.data.dek}>
@@ -57,7 +64,7 @@ const dateLabel = article.data.date.toLocaleDateString('en-ZA', {
       {
         article.data.sources.length > 0 && (
           <footer class="article-sources">
-            <p class="eyebrow">Sources</p>
+            <p class="eyebrow plain">Sources</p>
             <ul>
               {article.data.sources.map((url) => (
                 <li>
@@ -73,5 +80,26 @@ const dateLabel = article.data.date.toLocaleDateString('en-ZA', {
         )
       }
     </article>
+
+    {
+      readNext.length > 0 && (
+        <aside class="read-next">
+          <p class="rn-title">Read next</p>
+          <div class="next-grid">
+            {readNext.map((a) => (
+              <article class="next-card">
+                {a.data.heroSvg && (
+                  <a href={`/articles/${a.id}`} tabindex="-1" aria-hidden="true">
+                    <img src={a.data.heroSvg} alt="" loading="lazy" />
+                  </a>
+                )}
+                <h3><a href={`/articles/${a.id}`}>{a.data.title}</a></h3>
+                <span class="meta">{a.data.readingTime}</span>
+              </article>
+            ))}
+          </div>
+        </aside>
+      )
+    }
   </div>
 </Base>

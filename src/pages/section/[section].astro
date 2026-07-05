@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import StoryBlock from '../../components/StoryBlock.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
 import { SECTIONS } from '../../consts';
 
 export async function getStaticPaths() {
@@ -29,7 +29,11 @@ const articles = (await getCollection('articles', (a) => a.data.section === sect
           <p class="dek">Articles for this section are in production.</p>
         </div>
       ) : (
-        articles.map((a) => <StoryBlock article={a} />)
+        <div class="card-grid">
+          {articles.map((a) => (
+            <ArticleCard article={a} />
+          ))}
+        </div>
       )
     }
   </div>

@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { sectionBySlug } from '../consts';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+  showEyebrow?: boolean;
+  showDek?: boolean;
+}
+
+const { article, showEyebrow = false, showDek = true } = Astro.props;
+const section = sectionBySlug(article.data.section);
+---
+
+<article class="card">
+  {
+    article.data.heroSvg && (
+      <a class="card-art" href={`/articles/${article.id}`} tabindex="-1" aria-hidden="true">
+        <img src={article.data.heroSvg} alt="" loading="lazy" />
+      </a>
+    )
+  }
+  {showEyebrow && section && <p class="eyebrow">{section.name}</p>}
+  <h3><a href={`/articles/${article.id}`}>{article.data.title}</a></h3>
+  {showDek && <p class="card-dek">{article.data.dek}</p>}
+  <span class="meta">{article.data.readingTime}</span>
+</article>
