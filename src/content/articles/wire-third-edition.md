@@ -33,4 +33,4 @@ moneyLineCaption: "Owed to suppliers on invoices already past the 30-day legal d
 
 **Campus tech money is real.** Huawei's first Code4Mzansi put R100,000 behind a student-led spaza-commerce platform (see Winners). Corporate developer challenges now belong on every young tech founder's competition calendar alongside the traditional circuit.
 
-**Stat of the week: 47 to 1.** At the end of March 2025, provincial departments held R18 billion in invoices unpaid past the 30-day deadline; national departments held R381 million. Roughly 47 times the exposure, and 24 percent worse than the year before. Check which sphere your customer sits in before you quote.
+**Stat of the week: R18,4 billion.** At the end of March 2025, national and provincial departments together held R18,4 billion in invoices unpaid past the 30-day deadline, provincial departments R18 billion of it against national departments' R381 million. That is roughly 47 times the provincial exposure of national, and 24 percent worse than the year before. Check which sphere your customer sits in before you quote.

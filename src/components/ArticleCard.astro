@@ -10,7 +10,7 @@ interface Props {
 
 const { article, showEyebrow = false, showDek = true } = Astro.props;
 const section = sectionBySlug(article.data.section);
-const hero = article.data.heroSvg ?? `/heroes/${article.id}.svg`;
+const hero = article.data.heroImage ?? article.data.heroSvg ?? `/heroes/${article.id}.svg`;
 ---
 
 <article class="card">

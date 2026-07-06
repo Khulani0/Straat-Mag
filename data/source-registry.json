@@ -1,0 +1,165 @@
+{
+  "note": "Curated, credible sources for Straat Mag's niche. gather-sources.mjs pulls these into a dated research dossier every week. Feeds map to the five sections. Only add sources that are primary (government, agency, official programme) or established journalism with a track record. Never draft a number from an aggregator or content farm.",
+  "sources": [
+    {
+      "name": "National Treasury: OCPO and tender bulletins",
+      "url": "https://www.treasury.gov.za/",
+      "type": "html",
+      "feeds": ["ledger"],
+      "tier": "primary",
+      "notes": "Procurement regulations, 30-day payment reports, budget review annexures."
+    },
+    {
+      "name": "eTenders national portal (awarded)",
+      "url": "https://www.etenders.gov.za/Home/opportunities?id=2",
+      "type": "html",
+      "feeds": ["ledger"],
+      "tier": "primary",
+      "notes": "Awarded tenders. Primary evidence for The Ledger award items."
+    },
+    {
+      "name": "Auditor-General of South Africa: news",
+      "url": "https://www.agsa.co.za/news.aspx",
+      "type": "html",
+      "feeds": ["ledger"],
+      "tier": "primary",
+      "notes": "Irregular expenditure and material irregularity findings."
+    },
+    {
+      "name": "South African Government news (gov.za)",
+      "url": "https://www.gov.za/news/media-statements",
+      "type": "html",
+      "feeds": ["capital", "ledger", "wire"],
+      "tier": "primary",
+      "notes": "Ministerial announcements: DSBD, dtic, new funds and programmes."
+    },
+    {
+      "name": "SEDFA (Small Enterprise Development and Finance Agency)",
+      "url": "https://www.sedfa.org.za/",
+      "type": "html",
+      "feeds": ["capital", "wire"],
+      "tier": "primary",
+      "notes": "Merged SEFA/SEDA. Loan products, TREP, Peo Pele implementation."
+    },
+    {
+      "name": "NYDA (National Youth Development Agency)",
+      "url": "https://www.nyda.gov.za/",
+      "type": "html",
+      "feeds": ["capital", "wire"],
+      "tier": "primary",
+      "notes": "Grant programme criteria and amounts."
+    },
+    {
+      "name": "IDC (Industrial Development Corporation)",
+      "url": "https://www.idc.co.za/media-room/",
+      "type": "html",
+      "feeds": ["capital"],
+      "tier": "primary",
+      "notes": "Gro-E Youth and sector funding."
+    },
+    {
+      "name": "TIA (Technology Innovation Agency)",
+      "url": "https://www.tia.org.za/",
+      "type": "html",
+      "feeds": ["capital"],
+      "tier": "primary",
+      "notes": "Seed Fund and commercialisation."
+    },
+    {
+      "name": "SAB Foundation news",
+      "url": "https://www.sabfoundation.co.za/news",
+      "type": "html",
+      "feeds": ["winners", "capital", "wire"],
+      "tier": "primary",
+      "notes": "Social Innovation Awards, Tholoana, university seed funds. Winner announcements."
+    },
+    {
+      "name": "Nedbank Pitch and Polish",
+      "url": "https://pitchandpolish.com/",
+      "type": "html",
+      "feeds": ["winners", "wire"],
+      "tier": "primary",
+      "notes": "Competition winners and cycle dates."
+    },
+    {
+      "name": "Anzisha Prize",
+      "url": "https://anzisha.org/",
+      "type": "html",
+      "feeds": ["winners", "wire"],
+      "tier": "primary",
+      "notes": "Young entrepreneur winners and fellowship cycle."
+    },
+    {
+      "name": "AWIEF (Africa Women Innovation and Entrepreneurship Forum)",
+      "url": "https://www.awieforum.org/",
+      "type": "html",
+      "feeds": ["winners", "wire"],
+      "tier": "primary",
+      "notes": "Awards and Pitch n Grow deadlines."
+    },
+    {
+      "name": "Daily Maverick business and amaBhungane",
+      "url": "https://www.dailymaverick.co.za/section/business/",
+      "type": "html",
+      "feeds": ["ledger"],
+      "tier": "journalism",
+      "notes": "Investigative procurement reporting. Corroborate with a primary source before publishing a number."
+    },
+    {
+      "name": "Moneyweb",
+      "url": "https://www.moneyweb.co.za/news/south-africa/",
+      "type": "html",
+      "feeds": ["ledger", "capital"],
+      "tier": "journalism",
+      "notes": "Business and SME finance."
+    },
+    {
+      "name": "SME South Africa",
+      "url": "https://smesouthafrica.co.za/",
+      "type": "html",
+      "feeds": ["capital", "playbook", "wire"],
+      "tier": "journalism",
+      "notes": "Funding guides. Useful for leads; verify amounts against the funder's own site."
+    },
+    {
+      "name": "Ventureburn",
+      "url": "https://ventureburn.com/",
+      "type": "html",
+      "feeds": ["capital", "winners"],
+      "tier": "journalism",
+      "notes": "Startup funding and competitions."
+    },
+    {
+      "name": "Disrupt Africa",
+      "url": "https://disruptafrica.com/",
+      "type": "html",
+      "feeds": ["capital", "winners"],
+      "tier": "journalism",
+      "notes": "African startup funding rounds and programmes."
+    },
+    {
+      "name": "TechCentral",
+      "url": "https://techcentral.co.za/",
+      "type": "html",
+      "feeds": ["capital", "ledger"],
+      "tier": "journalism",
+      "notes": "Tech, DFI and agency funding news."
+    },
+    {
+      "name": "IOL Business Report",
+      "url": "https://iol.co.za/business-report/",
+      "type": "html",
+      "feeds": ["ledger", "capital"],
+      "tier": "journalism",
+      "notes": "General business and procurement."
+    },
+    {
+      "name": "Bizcommunity entrepreneurship",
+      "url": "https://www.bizcommunity.com/196/s-Entrepreneurship.html",
+      "type": "html",
+      "feeds": ["winners", "capital", "wire"],
+      "tier": "journalism",
+      "notes": "Programme launches and winner coverage."
+    }
+  ]
+}

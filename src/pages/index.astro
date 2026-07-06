@@ -12,7 +12,7 @@ const articles = (await getCollection('articles')).sort(
 
 const lead = articles[0];
 const leadSection = lead ? sectionBySlug(lead.data.section) : undefined;
-const heroFor = (a) => a.data.heroSvg ?? `/heroes/${a.id}.svg`;
+const heroFor = (a) => a.data.heroImage ?? a.data.heroSvg ?? `/heroes/${a.id}.svg`;
 const rest = articles.slice(1);
 
 // The Big Numbers rail: standout Money Line stats from across the issue.

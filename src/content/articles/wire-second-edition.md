@@ -33,4 +33,4 @@ moneyLineCaption: "Public infrastructure spending planned over the next three ye
 
 **Anzisha opens in spring.** Africa's award for entrepreneurs aged 15 to 22 has opened its last two intakes around October, closing in November. Young founders: use these months to get your trading records clean, because the prize rewards documented growth.
 
-**Stat of the week: R417,6 billion.** Transport's share of the three-year infrastructure plan, the largest of any sector. Roads, rail and ports are where the tender pipeline will be thickest through 2029.
+**Stat of the week: R1,07 trillion.** The total public infrastructure spend planned over the next three years, of which transport takes R417,6 billion, the largest share of any sector. Roads, rail and ports are where the tender pipeline will be thickest through 2029.

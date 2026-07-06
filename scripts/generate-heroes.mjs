@@ -167,6 +167,8 @@ for (const file of readdirSync(ARTICLES_DIR)) {
   if (!file.endsWith('.md')) continue;
   const slug = file.replace(/\.md$/, '');
   const fm = parseFrontmatter(readFileSync(path.join(ARTICLES_DIR, file), 'utf8'));
+  // If the article uses a fetched photo hero, no generated art is needed.
+  if (fm.heroImage && fm.heroImage.trim()) continue;
   const heroPath = fm.heroSvg && fm.heroSvg.trim() ? fm.heroSvg.trim() : `/heroes/${slug}.svg`;
   const target = path.join(PUBLIC_DIR, heroPath.replace(/^\//, ''));
   if (existsSync(target)) continue;

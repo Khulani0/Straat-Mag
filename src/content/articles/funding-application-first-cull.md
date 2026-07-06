@@ -18,7 +18,7 @@ moneyLineStat: "60"
 moneyLineCaption: "Businesses accepted into the SAB Foundation's Tholoana programme each year. Most applications are eliminated before anyone reads the business plan closely."
 ---
 
-Every funding programme in South Africa publishes its criteria, and every funding programme rejects most applicants for failing the published criteria. That is not a paradox, it is a filing problem: founders write applications about their dreams while screeners tick boxes about eligibility. The first cull (the pass through applications that eliminates the majority) is almost entirely mechanical, which means it is almost entirely avoidable. Here is how the real screens work, using the actual published rules.
+The SAB Foundation's Tholoana Enterprise Programme accepts around 60 businesses a year. Every funding programme in South Africa publishes its criteria, and every funding programme rejects most applicants for failing the published criteria. That is not a paradox, it is a filing problem: founders write applications about their dreams while screeners tick boxes about eligibility. The first cull (the pass through applications that eliminates the majority) is almost entirely mechanical, which means it is almost entirely avoidable. Here is how the real screens work, using the actual published rules.
 
 ## Screen one: hard eligibility. No appeal, no charm.
 

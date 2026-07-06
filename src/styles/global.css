@@ -700,6 +700,22 @@ h4 {
   width: 100%;
 }
 
+.article-hero {
+  margin-bottom: 0.4rem;
+}
+
+.hero-credit {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--slate);
+  padding: 0.4rem 0 0;
+}
+
+.hero-credit a {
+  color: var(--slate);
+}
+
 .article-body {
   padding-bottom: 1rem;
 }

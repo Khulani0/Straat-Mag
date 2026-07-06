@@ -5,7 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node scripts/generate-heroes.mjs",
+    "prebuild": "node scripts/check-articles.mjs && node scripts/generate-heroes.mjs",
+    "gather": "node scripts/gather-sources.mjs",
+    "image": "node scripts/fetch-images.mjs",
+    "check": "node scripts/check-articles.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

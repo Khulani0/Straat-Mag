@@ -12,10 +12,13 @@ export async function getStaticPaths() {
   }));
 }
 
+import credits from '../../../data/image-credits.json';
+
 const { article } = Astro.props;
 const { Content } = await render(article);
 const section = sectionBySlug(article.data.section);
-const heroFor = (a) => a.data.heroSvg ?? `/heroes/${a.id}.svg`;
+const heroFor = (a) => a.data.heroImage ?? a.data.heroSvg ?? `/heroes/${a.id}.svg`;
+const credit = (credits as Record<string, { provider: string; photographer: string; pageUrl: string }>)[article.id];
 const dateLabel = article.data.date.toLocaleDateString('en-ZA', {
   day: 'numeric',
   month: 'long',
@@ -46,6 +49,13 @@ const readNext = [
         <span class="meta">{dateLabel} · {article.data.readingTime}</span>
         <figure class="article-hero">
           <img src={heroFor(article)} alt="" loading="eager" />
+          {
+            article.data.heroImage && credit && (
+              <figcaption class="hero-credit">
+                Photo: {credit.photographer} via <a href={credit.pageUrl} rel="noopener noreferrer">{credit.provider}</a>
+              </figcaption>
+            )
+          }
         </figure>
         {
           article.data.moneyLineStat && (
