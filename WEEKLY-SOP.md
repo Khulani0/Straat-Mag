@@ -1,4 +1,4 @@
-# Straat Mag weekly production SOP
+# Phanda Mag weekly production SOP
 
 The repeatable process for producing one weekly issue in a half-day session. Follow it in order. The editorial rules (zero fabrication, the Kill Rule, no invented people, no stock photos of people, no em-dashes, free stack only, SA English) apply to every step.
 

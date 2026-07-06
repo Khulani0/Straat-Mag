@@ -4,6 +4,7 @@ dek: "The big four all run enterprise and supplier development machines, and bil
 section: "capital"
 date: 2026-07-06
 readingTime: "6 min read"
+status: published
 verified: true
 sources:
   - "https://www.fnb.co.za/business-banking/specialised-finance/vumela.html"

@@ -4,6 +4,7 @@ dek: "R42,5 billion in irregular expenditure in a year, most of it born in procu
 section: "ledger"
 date: 2026-07-06
 readingTime: "6 min read"
+status: published
 verified: true
 sources:
   - "https://www.citizen.co.za/news/south-africa/auditor-general-88-government-expenditure-control-mismanaged-departments/"

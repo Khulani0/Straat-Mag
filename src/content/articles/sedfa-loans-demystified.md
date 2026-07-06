@@ -4,6 +4,7 @@ dek: "The state's small business lender funds from R50,000 to R15 million across
 section: "capital"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://www.sedfa.org.za/"

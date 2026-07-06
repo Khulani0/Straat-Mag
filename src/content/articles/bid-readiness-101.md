@@ -4,6 +4,7 @@ dek: "Government bids are lost on missing documents more often than on price. Th
 section: "playbook"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://secure.csd.gov.za/Home/RegistrationProcess"

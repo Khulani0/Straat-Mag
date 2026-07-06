@@ -4,6 +4,7 @@ dek: "SANRAL spread real money across Eastern Cape contractors while its biggest
 section: "ledger"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://quarryingafrica.com/sanral-awards-r14-billion-worth-of-contracts-since-april-in-the-eastern-cape/"

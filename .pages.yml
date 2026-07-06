@@ -48,6 +48,16 @@ content:
         label: Reading time (e.g. 5 min read)
         type: string
         required: true
+      - name: status
+        label: Status (Draft stays off the live site until you set Published)
+        type: select
+        default: draft
+        options:
+          values:
+            - value: draft
+              label: Draft (in review, not live)
+            - value: published
+              label: Published (live on the site)
       - name: verified
         label: Verified (every figure checked against a source)
         type: boolean

@@ -4,6 +4,7 @@ dek: "The evidence says cash alone is the weakest prize. Why the best programmes
 section: "playbook"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://fetola.co.za/wp-content/uploads/2025/05/SAB-Foundation-Impact-Report-2024.pdf"

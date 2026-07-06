@@ -1,5 +1,5 @@
 {
-  "note": "Curated, credible sources for Straat Mag's niche. gather-sources.mjs pulls these into a dated research dossier every week. Feeds map to the five sections. Only add sources that are primary (government, agency, official programme) or established journalism with a track record. Never draft a number from an aggregator or content farm.",
+  "note": "Curated, credible sources for Phanda Mag's niche. gather-sources.mjs pulls these into a dated research dossier every week. Feeds map to the five sections. Only add sources that are primary (government, agency, official programme) or established journalism with a track record. Never draft a number from an aggregator or content farm.",
   "sources": [
     {
       "name": "National Treasury: OCPO and tender bulletins",

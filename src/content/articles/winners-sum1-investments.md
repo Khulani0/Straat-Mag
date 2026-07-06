@@ -4,6 +4,7 @@ dek: "Kurhula Baloyi's SUM1 Investments channels stokvel savings into township a
 section: "winners"
 date: 2026-07-06
 readingTime: "4 min read"
+status: published
 verified: true
 sources:
   - "https://www.citizen.co.za/sandton-chronicle/news-headlines/local-news/2025/10/16/the-sab-foundations-2025-social-innovation-and-disability-empowerment-awards-award-entrepreneurs-millions/"

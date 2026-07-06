@@ -4,6 +4,7 @@ dek: "It is real money and you never pay it back, but the cap is R200,000, the t
 section: "capital"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://www.nyda.gov.za/Portals/0/WebSitesCreative_MyContentManager/1092/NYDA_Grant_Programme.pdf"

@@ -1,4 +1,4 @@
-// Straat Mag weekly source gatherer.
+// Phanda Mag weekly source gatherer.
 //
 // Pulls every source in data/source-registry.json into a dated dossier under
 // research/<date>/, saving the readable text of each page with its URL and
@@ -48,7 +48,7 @@ for (const s of selected) {
   const name = `${slugify(s.name)}.md`;
   try {
     const r = await fetch(s.url, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (StraatMag research gatherer)' },
+      headers: { 'User-Agent': 'Mozilla/5.0 (PhandaMag research gatherer)' },
       redirect: 'follow',
     });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);

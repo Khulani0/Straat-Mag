@@ -4,6 +4,7 @@ dek: "Eight verified briefs: what is open, what is closing, what changed, and th
 section: "wire"
 date: 2026-07-06
 readingTime: "3 min read"
+status: published
 verified: true
 sources:
   - "https://www.africa.com/whats-happening/nominations-open-for-awief-awards-2026-honouring-and-celebrating-africas-women-entrepreneurs"

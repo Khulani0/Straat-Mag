@@ -4,6 +4,7 @@ dek: "SEFA and SEDA no longer exist, a new R300 million youth fund just launched
 section: "capital"
 date: 2026-07-06
 readingTime: "6 min read"
+status: published
 verified: true
 featured: true
 sources:

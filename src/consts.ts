@@ -2,7 +2,7 @@
 // so they can be updated from the CMS without touching code.
 import settings from '../data/settings.json';
 
-export const SITE_TITLE = 'Straat Mag';
+export const SITE_TITLE = 'Phanda Mag';
 export const SITE_DESCRIPTION =
   'A weekly online intelligence magazine for South African entrepreneurs: public procurement money flows, government and private funding, entrepreneurship competitions, and capital-raising strategy.';
 
@@ -47,4 +47,12 @@ export type SectionSlug = (typeof SECTIONS)[number]['slug'];
 
 export function sectionBySlug(slug: string) {
   return SECTIONS.find((s) => s.slug === slug);
+}
+
+// Live builds show only published articles. Local preview (npm run dev) shows
+// drafts too, so you can review a new article, with its images, before it goes
+// live. This is the review-before-publish gate.
+export function isVisible(data: { status?: string }) {
+  if (import.meta.env.DEV) return true;
+  return data.status === 'published';
 }

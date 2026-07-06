@@ -1,0 +1,20 @@
+{
+  "note": "Maps articles to a photo search query. At build time, fetch-photos.mjs turns each query into a real, licence-clean photo (Pexels/Pixabay/Unsplash) IF an API key is present in the environment. On Vercel, add PEXELS_API_KEY (or the others) as an Environment Variable and every listed article gets a real South African photo automatically, with its credit. With no key, or offline, the article keeps its generated cover art. Data pieces (charts) and Winners profiles are deliberately absent: charts stay as SVG, and Winners must use the person's own or official photo, never a stock face.",
+  "noPeopleDefault": true,
+  "photos": {
+    "government-funding-map-2026": "south africa parliament government building",
+    "nyda-grant-programme-explained": "young african entrepreneur small business owner",
+    "how-public-procurement-works": "johannesburg city skyline offices",
+    "sedfa-loans-demystified": "south africa bank finance building",
+    "bank-smme-funds-guide": "sandton johannesburg financial district",
+    "foreign-dfi-money": "shipping port containers south africa trade",
+    "university-youth-money": "university of cape town campus students",
+    "crowdfunding-community-capital": "south africa township small shop spaza",
+    "competition-circuit-strategy": "business pitch presentation audience",
+    "grant-equity-debt": "south african rand banknotes money",
+    "funding-application-first-cull": "business documents paperwork desk",
+    "bid-readiness-101": "signing contract documents office",
+    "after-the-prize": "trophy award ceremony stage",
+    "judges-versus-customers": "market vendor customer south africa"
+  }
+}

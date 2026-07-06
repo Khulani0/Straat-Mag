@@ -1,4 +1,4 @@
-// Straat Mag free-image fetcher.
+// Phanda Mag free-image fetcher.
 //
 // Searches Pexels, Pixabay and Unsplash for a licence-clean photo, downloads
 // the best candidate to public/photos/<slug>.jpg, and records the credit in

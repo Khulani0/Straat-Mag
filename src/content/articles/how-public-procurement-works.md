@@ -4,6 +4,7 @@ dek: "The state is South Africa's biggest customer, the law says it must pay you
 section: "ledger"
 date: 2026-07-06
 readingTime: "6 min read"
+status: published
 verified: true
 sources:
   - "https://secure.csd.gov.za/Home/RegistrationProcess"

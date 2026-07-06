@@ -4,6 +4,7 @@ dek: "Tshegofatso Morena, 20, led his team to the People's Choice Award and R100
 section: "winners"
 date: 2026-07-06
 readingTime: "4 min read"
+status: published
 verified: true
 sources:
   - "https://www.tut.ac.za/newsroom/all-news/2026/township-innovation-earns-student-entrepreneur-r100-000-boost.php"

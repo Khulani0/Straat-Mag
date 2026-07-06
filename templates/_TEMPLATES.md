@@ -1,4 +1,4 @@
-# Straat Mag issue template: fixed shape, every week
+# Phanda Mag issue template: fixed shape, every week
 
 The rigid weekly issue. Same five sections, same lengths, every week. This is
 what keeps production inside one half-day and stops scope creep from blowing

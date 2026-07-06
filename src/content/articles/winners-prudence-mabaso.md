@@ -4,6 +4,7 @@ dek: "The Kitchen Wrap Company beat more than 2,200 entries to win the 2025 Nedb
 section: "winners"
 date: 2026-07-06
 readingTime: "4 min read"
+status: published
 verified: true
 sources:
   - "https://pitchandpolish.com/r1-million-nedbank-pitch-polish-competition-winner-announced/"

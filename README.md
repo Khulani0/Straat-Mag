@@ -1,4 +1,4 @@
-# Straat Mag
+# Phanda Mag
 
 A weekly online intelligence magazine for South African entrepreneurs: public procurement money flows, government and private funding, entrepreneurship competitions, and capital-raising strategy.
 

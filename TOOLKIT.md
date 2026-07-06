@@ -1,4 +1,4 @@
-# The Straat Mag production toolkit
+# The Phanda Mag production toolkit
 
 Everything needed to produce one accurate weekly issue in a half-day, with
 on-brand visuals and zero fabrication. Four tools plus the accuracy gate.

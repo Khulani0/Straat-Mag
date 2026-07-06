@@ -4,6 +4,7 @@ dek: "The InnoVarsity, the SAB Foundation's university seed funds, TIA's tech tr
 section: "capital"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://edhe.co.za/edhe-entrepreneurship-innovarsity-challenge-2026/"

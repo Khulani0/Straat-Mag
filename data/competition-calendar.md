@@ -1,4 +1,4 @@
-# Straat Mag Competition and Funding Calendar
+# Phanda Mag Competition and Funding Calendar
 
 Core asset. Feeds The Wire every week and anchors Capital and Winners reporting.
 

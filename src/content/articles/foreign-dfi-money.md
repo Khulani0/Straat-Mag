@@ -4,6 +4,7 @@ dek: "The IFC, the African Development Bank and the Mastercard Foundation have c
 section: "capital"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://www.afdb.org/en/news-and-events/press-releases/african-development-bank-approves-310-million-financial-package-firstrand-bank-scale-lending-msmes-women-entrepreneurs-and-agribusinesses-south-africa-88585"

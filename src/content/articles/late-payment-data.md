@@ -4,6 +4,7 @@ dek: "Treasury's latest report shows more than 142,000 supplier invoices sat unp
 section: "ledger"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://www.treasury.gov.za/legislation/pfma/Compliance%20on%20Payment%20of%20Suppliers/Annual%20Report%20-%20Non-Compliance%20with%20Payments%20of%20Supplier's%20Invoices%20-%202024-25.pdf"

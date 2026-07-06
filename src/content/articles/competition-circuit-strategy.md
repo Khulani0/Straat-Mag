@@ -4,6 +4,7 @@ dek: "South Africa's pitch competitions pay out millions in prizes every year on
 section: "playbook"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://www.africa.com/whats-happening/nominations-open-for-awief-awards-2026-honouring-and-celebrating-africas-women-entrepreneurs"

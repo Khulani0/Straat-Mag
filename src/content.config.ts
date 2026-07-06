@@ -14,6 +14,10 @@ const articles = defineCollection({
     date: z.coerce.date(),
     // e.g. "6 min read"
     readingTime: z.string(),
+    // Review gate. 'draft' articles are visible only in local preview
+    // (npm run dev), never on the live site, until a human sets 'published'.
+    // Defaults to draft so nothing auto-publishes without approval.
+    status: z.enum(['draft', 'published']).default('draft'),
     // Only true once every factual claim has been checked against sources.
     verified: z.boolean(),
     // URLs of the sources cited at the bottom of the article.

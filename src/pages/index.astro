@@ -2,9 +2,9 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import ArticleCard from '../components/ArticleCard.astro';
-import { SECTIONS, ISSUE_NUMBER, ISSUE_DATE, sectionBySlug } from '../consts';
+import { SECTIONS, ISSUE_NUMBER, ISSUE_DATE, sectionBySlug, isVisible } from '../consts';
 
-const articles = (await getCollection('articles')).sort(
+const articles = (await getCollection('articles', (a) => isVisible(a.data))).sort(
   (a, b) =>
     Number(b.data.featured) - Number(a.data.featured) ||
     b.data.date.valueOf() - a.data.date.valueOf()

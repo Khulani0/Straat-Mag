@@ -4,6 +4,7 @@ dek: "Scorecards reward completeness; buyers reward relief from a problem. An op
 section: "playbook"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://townshipeconomyawards.co.za/"

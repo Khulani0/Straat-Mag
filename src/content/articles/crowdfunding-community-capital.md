@@ -4,6 +4,7 @@ dek: "Rewards platforms work at small scale, donation platforms work for causes,
 section: "capital"
 date: 2026-07-06
 readingTime: "5 min read"
+status: published
 verified: true
 sources:
   - "https://jumpstarter.co.za/crowdfunding-in-2026-your-south-african-jumpstarter-guide-to-rewards/"

@@ -8,7 +8,7 @@ browser; everything else (artwork, layout, deployment) is automatic.
 1. Go to **app.pagescms.org** in your browser.
 2. Click **Sign in with GitHub** and log in as Khulani0.
 3. Authorise Pages CMS when GitHub asks (it needs access to your repositories).
-4. You will see your repositories. Click **Straat-Mag**.
+4. You will see your repositories. Click **Phanda-Mag**.
 5. That's it. The editing screens are already configured by the `.pages.yml`
    file in the repository: you will see **Articles** and **Issue settings**
    in the sidebar.
@@ -54,7 +54,7 @@ Kill Rule) lives in `WEEKLY-SOP.md`.
 
 The site already carries the Vercel Web Analytics script. To switch it on:
 
-1. Go to **vercel.com**, log in, and open your **straat-mag** project.
+1. Go to **vercel.com**, log in, and open your **phanda-mag** project.
 2. Click the **Analytics** tab.
 3. Click **Enable**. Free plan is fine.
 

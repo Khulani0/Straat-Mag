@@ -2,10 +2,10 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import MoneyLine from '../../components/MoneyLine.astro';
-import { sectionBySlug } from '../../consts';
+import { sectionBySlug, isVisible } from '../../consts';
 
 export async function getStaticPaths() {
-  const articles = await getCollection('articles');
+  const articles = await getCollection('articles', (a) => isVisible(a.data));
   return articles.map((article) => ({
     params: { slug: article.id },
     props: { article },
@@ -26,7 +26,7 @@ const dateLabel = article.data.date.toLocaleDateString('en-ZA', {
 });
 
 // Read next: same section first, then the rest of the issue, never itself.
-const all = await getCollection('articles');
+const all = await getCollection('articles', (a) => isVisible(a.data));
 const readNext = [
   ...all.filter((a) => a.id !== article.id && a.data.section === article.data.section),
   ...all.filter((a) => a.id !== article.id && a.data.section !== article.data.section),

@@ -4,6 +4,7 @@ dek: "Eight verified briefs: the AWIEF countdown, billions in new bank-channel f
 section: "wire"
 date: 2026-07-06
 readingTime: "3 min read"
+status: published
 verified: true
 sources:
   - "https://www.africa.com/whats-happening/nominations-open-for-awief-awards-2026-honouring-and-celebrating-africas-women-entrepreneurs"

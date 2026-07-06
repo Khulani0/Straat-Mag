@@ -4,6 +4,7 @@ dek: "At 22, KwaZulu-Natal's Cebolenkosi Gcabashe turned a single machine into G
 section: "winners"
 date: 2026-07-06
 readingTime: "4 min read"
+status: published
 verified: true
 sources:
   - "https://anzisha.org/turning-pressure-into-profit-how-cebo-gcabashe-built-g-khula-trading/"
