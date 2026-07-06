@@ -1,22 +1,26 @@
 ---
-title: "What happens after the prize money clears"
-dek: "The evidence says cash alone is the weakest prize. Why the best programmes now wrap money in support, and how a winner should spend the year after the cheque."
-section: "playbook"
+title: What happens after the prize money clears
+dek: The evidence says cash alone is the weakest prize. Why the best programmes
+  now wrap money in support, and how a winner should spend the year after the
+  cheque.
+section: playbook
 date: 2026-07-06
-readingTime: "5 min read"
+readingTime: 5 min read
 status: published
 verified: true
+featured: false
+moneyLineStat: 90%
+moneyLineCaption: Of entrepreneurs supported by the SAB Foundation's wrap-around
+  programmes were still operating five years later, per its decade-spanning
+  impact reporting.
+heroSvg: /heroes/after-the-prize.svg
 sources:
-  - "https://fetola.co.za/wp-content/uploads/2025/05/SAB-Foundation-Impact-Report-2024.pdf"
-  - "https://www.sabfoundation.co.za/impact"
-  - "https://www.dailymaverick.co.za/article/2026-02-27-new-insights-highlight-how-south-africanan-entrepreneurs-are-building-resilience/"
-  - "https://pitchandpolish.com/r1-million-nedbank-pitch-polish-competition-winner-announced/"
-  - "https://anzisha.org/apply/"
-heroSvg: "/heroes/after-the-prize.svg"
-moneyLineStat: "90%"
-moneyLineCaption: "Of entrepreneurs supported by the SAB Foundation's wrap-around programmes were still operating five years later, per its decade-spanning impact reporting."
+  - https://fetola.co.za/wp-content/uploads/2025/05/SAB-Foundation-Impact-Report-2024.pdf
+  - https://www.sabfoundation.co.za/impact
+  - https://www.dailymaverick.co.za/article/2026-02-27-new-insights-highlight-how-south-africanan-entrepreneurs-are-building-resilience/
+  - https://pitchandpolish.com/r1-million-nedbank-pitch-polish-competition-winner-announced/
+  - https://anzisha.org/apply/
 ---
-
 Every awards evening produces the same photograph: the oversized cheque, the delighted founder, the sponsor's logo. The photograph never shows year two. This magazine profiles winners, so it owes readers the honest question: what does the evidence say happens after the prize, and what separates the winners who compound from the winners who stall?
 
 ## What the published evidence actually shows
