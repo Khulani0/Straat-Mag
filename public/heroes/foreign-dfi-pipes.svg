@@ -1,24 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Foreign development finance flowing through local banks to small businesses">
-  <rect width="1200" height="500" fill="#FAFAF6"/>
-  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold">
-    <text x="60" y="100" font-size="26" fill="#141414">IFC · AfDB · MASTERCARD FDN</text>
-    <text x="60" y="470" font-size="17" fill="#5C6670" font-weight="normal">YOU APPLY AT THE LOCAL END OF THE PIPE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Illustration of a container port with cranes and stacked shipping containers">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAFAF6"/>
+      <stop offset="1" stop-color="#E9EEF0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky2)"/>
+  <!-- water -->
+  <rect x="0" y="360" width="1200" height="140" fill="#5C6670"/>
+  <g stroke="#FAFAF6" stroke-width="2" opacity="0.25">
+    <line x1="0" y1="390" x2="1200" y2="390"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="450" x2="1200" y2="450"/>
   </g>
+  <!-- cranes -->
   <g stroke="#141414" stroke-width="8" fill="none">
-    <path d="M180 130 L180 240 L400 240"/>
-    <path d="M600 130 L600 240"/>
-    <path d="M1020 130 L1020 240 L800 240"/>
+    <path d="M170 360 L170 120 L470 120"/>
+    <line x1="170" y1="160" x2="130" y2="120"/>
+    <line x1="470" y1="120" x2="470" y2="200"/>
+    <path d="M640 360 L640 100 L940 100"/>
+    <line x1="640" y1="140" x2="600" y2="100"/>
+    <line x1="940" y1="100" x2="940" y2="185"/>
   </g>
-  <rect x="400" y="200" width="400" height="80" fill="#141414"/>
-  <text x="440" y="252" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="26" fill="#F2B705">LOCAL BANKS + FUNDS</text>
-  <g stroke="#F2B705" stroke-width="8">
-    <line x1="480" y1="280" x2="480" y2="370"/>
-    <line x1="600" y1="280" x2="600" y2="370"/>
-    <line x1="720" y1="280" x2="720" y2="370"/>
+  <!-- containers -->
+  <g>
+    <rect x="80" y="300" width="120" height="40" fill="#B3352C"/>
+    <rect x="205" y="300" width="120" height="40" fill="#141414"/>
+    <rect x="80" y="255" width="120" height="40" fill="#F2B705"/>
+    <rect x="205" y="255" width="120" height="40" fill="#B3352C"/>
+    <rect x="142" y="210" width="120" height="40" fill="#141414"/>
+    <rect x="470" y="310" width="120" height="40" fill="#141414"/>
+    <rect x="595" y="310" width="120" height="40" fill="#F2B705"/>
+    <rect x="470" y="265" width="120" height="40" fill="#B3352C"/>
+    <rect x="595" y="265" width="120" height="40" fill="#141414"/>
+    <rect x="850" y="305" width="120" height="40" fill="#F2B705"/>
+    <rect x="975" y="305" width="120" height="40" fill="#141414"/>
+    <rect x="912" y="260" width="120" height="40" fill="#B3352C"/>
   </g>
-  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="22" fill="#141414">
-    <text x="380" y="415">SMME</text>
-    <text x="555" y="415">SMME</text>
-    <text x="700" y="415">SMME</text>
+  <g stroke="#FAFAF6" stroke-width="1.5" opacity="0.4">
+    <line x1="122" y1="255" x2="122" y2="340"/><line x1="162" y1="255" x2="162" y2="340"/>
+    <line x1="530" y1="265" x2="530" y2="350"/><line x1="655" y1="265" x2="655" y2="350"/>
+    <line x1="910" y1="305" x2="910" y2="345"/><line x1="1035" y1="305" x2="1035" y2="345"/>
+  </g>
+  <rect x="0" y="438" width="1200" height="62" fill="#141414"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="476" font-size="20" font-weight="bold" fill="#FAFAF6" letter-spacing="1">CAPITAL</text>
+    <text x="1140" y="476" text-anchor="end" font-size="15" font-weight="bold" fill="#F2B705" letter-spacing="2">FOREIGN AND DFI MONEY</text>
   </g>
 </svg>

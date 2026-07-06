@@ -1,13 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="SEDFA lending range from fifty thousand rand to fifteen million rand">
-  <rect width="1200" height="500" fill="#141414"/>
-  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold">
-    <text x="60" y="120" font-size="30" fill="#FAFAF6">ONE DOOR. EVERY SECTOR.</text>
-    <line x1="60" y1="260" x2="1140" y2="260" stroke="#F2B705" stroke-width="10"/>
-    <circle cx="90" cy="260" r="18" fill="#FAFAF6"/>
-    <circle cx="1110" cy="260" r="18" fill="#F2B705"/>
-    <text x="60" y="330" font-size="34" fill="#FAFAF6">R50,000</text>
-    <text x="905" y="330" font-size="34" fill="#F2B705">R15 million</text>
-    <text x="60" y="400" font-size="19" fill="#5C6670" font-weight="normal">ASSETS · WORKING CAPITAL · BRIDGING · EXPANSION</text>
-    <text x="60" y="455" font-size="17" fill="#5C6670" font-weight="normal">SEDFA DIRECT LENDING, FORMERLY SEFA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Illustration of a state development finance building with columns">
+  <defs>
+    <linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141414"/>
+      <stop offset="1" stop-color="#2b2b2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky4)"/>
+  <g stroke="#F2B705" stroke-width="2" opacity="0.18">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="150" x2="1200" y2="150"/>
+  </g>
+  <!-- grand building -->
+  <g fill="#FAFAF6">
+    <polygon points="330,190 600,90 870,190"/>
+    <rect x="350" y="190" width="500" height="24"/>
+    <rect x="360" y="360" width="480" height="20"/>
+  </g>
+  <g fill="#FAFAF6">
+    <rect x="380" y="220" width="34" height="140"/>
+    <rect x="448" y="220" width="34" height="140"/>
+    <rect x="516" y="220" width="34" height="140"/>
+    <rect x="584" y="220" width="34" height="140"/>
+    <rect x="652" y="220" width="34" height="140"/>
+    <rect x="720" y="220" width="34" height="140"/>
+    <rect x="788" y="220" width="34" height="140"/>
+  </g>
+  <!-- steps -->
+  <g fill="#5C6670">
+    <rect x="345" y="382" width="510" height="14"/>
+    <rect x="330" y="398" width="540" height="14"/>
+    <rect x="315" y="414" width="570" height="14"/>
+  </g>
+  <polygon points="590,110 600,132 622,132 604,146 611,168 590,154 569,168 576,146 558,132 580,132" fill="#F2B705"/>
+  <rect x="0" y="438" width="1200" height="62" fill="#141414"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="476" font-size="20" font-weight="bold" fill="#FAFAF6" letter-spacing="1">CAPITAL</text>
+    <text x="1140" y="476" text-anchor="end" font-size="15" font-weight="bold" fill="#F2B705" letter-spacing="2">SEDFA LOANS, DEMYSTIFIED</text>
   </g>
 </svg>

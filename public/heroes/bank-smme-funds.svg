@@ -1,20 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="The four banks and their small business funding channels">
-  <rect width="1200" height="500" fill="#FAFAF6"/>
-  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold">
-    <text x="60" y="90" font-size="30" fill="#141414">WHERE THE BANK MONEY SITS</text>
-    <rect x="60" y="140" width="250" height="150" fill="#141414"/>
-    <text x="85" y="200" font-size="26" fill="#F2B705">FNB</text>
-    <text x="85" y="245" font-size="17" fill="#FAFAF6" font-weight="normal">Vumela + IFC/AfDB</text>
-    <rect x="340" y="140" width="250" height="150" fill="#141414"/>
-    <text x="365" y="200" font-size="26" fill="#F2B705">ABSA</text>
-    <text x="365" y="245" font-size="17" fill="#FAFAF6" font-weight="normal">SMME Fund + ESD</text>
-    <rect x="620" y="140" width="250" height="150" fill="#141414"/>
-    <text x="645" y="200" font-size="26" fill="#F2B705">STANDARD</text>
-    <text x="645" y="245" font-size="17" fill="#FAFAF6" font-weight="normal">ESD + AfDB deal</text>
-    <rect x="900" y="140" width="240" height="150" fill="#141414"/>
-    <text x="925" y="200" font-size="26" fill="#F2B705">NEDBANK</text>
-    <text x="925" y="245" font-size="17" fill="#FAFAF6" font-weight="normal">Pitch and Polish</text>
-    <text x="60" y="380" font-size="22" fill="#141414" font-weight="normal">The branch says no. The development machinery exists to say yes.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Illustration of the Sandton financial district skyline at dusk">
+  <defs>
+    <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAFAF6"/>
+      <stop offset="0.62" stop-color="#F7E7A8"/>
+      <stop offset="1" stop-color="#F2B705"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky1)"/>
+  <circle cx="980" cy="150" r="60" fill="#FAFAF6" opacity="0.85"/>
+  <g fill="#141414">
+    <rect x="60" y="250" width="70" height="190"/>
+    <rect x="145" y="200" width="90" height="240"/>
+    <rect x="250" y="290" width="60" height="150"/>
+    <rect x="325" y="150" width="105" height="290"/>
+    <rect x="445" y="230" width="80" height="210"/>
+    <rect x="540" y="110" width="120" height="330"/>
+    <rect x="675" y="260" width="70" height="180"/>
+    <rect x="760" y="185" width="95" height="255"/>
+    <rect x="870" y="245" width="70" height="195"/>
+    <rect x="955" y="205" width="105" height="235"/>
+    <rect x="1075" y="270" width="65" height="170"/>
   </g>
-  <rect x="60" y="420" width="1080" height="10" fill="#F2B705"/>
+  <g fill="#F2B705" opacity="0.9">
+    <rect x="160" y="220" width="12" height="12"/><rect x="185" y="220" width="12" height="12"/><rect x="210" y="220" width="12" height="12"/>
+    <rect x="160" y="255" width="12" height="12"/><rect x="210" y="255" width="12" height="12"/>
+    <rect x="345" y="175" width="12" height="14"/><rect x="375" y="175" width="12" height="14"/><rect x="405" y="175" width="12" height="14"/>
+    <rect x="345" y="215" width="12" height="14"/><rect x="405" y="215" width="12" height="14"/>
+    <rect x="345" y="255" width="12" height="14"/><rect x="375" y="255" width="12" height="14"/>
+    <rect x="560" y="135" width="14" height="14"/><rect x="595" y="135" width="14" height="14"/><rect x="630" y="135" width="14" height="14"/>
+    <rect x="560" y="180" width="14" height="14"/><rect x="630" y="180" width="14" height="14"/>
+    <rect x="560" y="225" width="14" height="14"/><rect x="595" y="225" width="14" height="14"/>
+    <rect x="780" y="210" width="12" height="12"/><rect x="810" y="210" width="12" height="12"/>
+    <rect x="975" y="230" width="12" height="12"/><rect x="1010" y="230" width="12" height="12"/><rect x="975" y="265" width="12" height="12"/>
+  </g>
+  <rect x="0" y="438" width="1200" height="62" fill="#141414"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="476" font-size="20" font-weight="bold" fill="#FAFAF6" letter-spacing="1">CAPITAL</text>
+    <text x="1140" y="476" text-anchor="end" font-size="15" font-weight="bold" fill="#F2B705" letter-spacing="2">WHERE THE BANK MONEY SITS</text>
+  </g>
 </svg>

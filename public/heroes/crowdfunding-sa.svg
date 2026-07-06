@@ -1,22 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Many small contributions flowing into one business">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="Illustration of a township high street of small shops">
   <rect width="1200" height="500" fill="#FAFAF6"/>
-  <g fill="#141414">
-    <circle cx="120" cy="120" r="14"/><circle cx="200" cy="90" r="14"/><circle cx="280" cy="130" r="14"/>
-    <circle cx="150" cy="220" r="14"/><circle cx="240" cy="200" r="14"/><circle cx="330" cy="230" r="14"/>
-    <circle cx="120" cy="320" r="14"/><circle cx="210" cy="310" r="14"/><circle cx="300" cy="330" r="14"/>
+  <rect x="0" y="120" width="1200" height="320" fill="#F7E7A8" opacity="0.5"/>
+  <!-- row of shops -->
+  <g>
+    <rect x="60" y="210" width="200" height="230" fill="#141414"/>
+    <rect x="80" y="150" width="160" height="60" fill="#B3352C"/>
+    <rect x="95" y="300" width="60" height="140" fill="#F2B705"/>
+    <rect x="170" y="300" width="70" height="90" fill="#FAFAF6"/>
+
+    <rect x="280" y="230" width="220" height="210" fill="#5C6670"/>
+    <rect x="300" y="175" width="180" height="55" fill="#141414"/>
+    <rect x="320" y="290" width="80" height="150" fill="#141414"/>
+    <rect x="415" y="290" width="70" height="95" fill="#F2B705"/>
+
+    <rect x="520" y="200" width="200" height="240" fill="#141414"/>
+    <rect x="540" y="150" width="160" height="55" fill="#F2B705"/>
+    <rect x="560" y="285" width="70" height="155" fill="#FAFAF6"/>
+    <rect x="645" y="285" width="60" height="100" fill="#B3352C"/>
+
+    <rect x="740" y="235" width="210" height="205" fill="#B3352C"/>
+    <rect x="760" y="180" width="170" height="55" fill="#141414"/>
+    <rect x="780" y="300" width="75" height="140" fill="#141414"/>
+    <rect x="870" y="300" width="65" height="95" fill="#FAFAF6"/>
+
+    <rect x="970" y="215" width="170" height="225" fill="#141414"/>
+    <rect x="985" y="165" width="140" height="50" fill="#5C6670"/>
+    <rect x="1000" y="295" width="55" height="145" fill="#F2B705"/>
+    <rect x="1070" y="295" width="55" height="95" fill="#FAFAF6"/>
   </g>
-  <g stroke="#F2B705" stroke-width="6" fill="none">
-    <path d="M360 130 L560 250"/>
-    <path d="M360 220 L560 250"/>
-    <path d="M360 320 L560 250"/>
+  <!-- awnings stripe -->
+  <rect x="60" y="205" width="1080" height="8" fill="#F2B705"/>
+  <rect x="0" y="438" width="1200" height="62" fill="#141414"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="476" font-size="20" font-weight="bold" fill="#FAFAF6" letter-spacing="1">CAPITAL</text>
+    <text x="1140" y="476" text-anchor="end" font-size="15" font-weight="bold" fill="#F2B705" letter-spacing="2">CROWDFUNDING AND COMMUNITY CAPITAL</text>
   </g>
-  <rect x="580" y="180" width="300" height="140" fill="#141414"/>
-  <text x="615" y="240" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="30" fill="#F2B705">THE CROWD</text>
-  <text x="615" y="285" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="30" fill="#FAFAF6">FUNDS TRUST</text>
-  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#141414" font-size="20">
-    <text x="920" y="215">REWARDS: SIMPLE</text>
-    <text x="920" y="255">EQUITY: REGULATED</text>
-    <text x="920" y="295">STOKVEL: ORIGINAL</text>
-  </g>
-  <rect x="120" y="420" width="960" height="10" fill="#F2B705"/>
 </svg>
