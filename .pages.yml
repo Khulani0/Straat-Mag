@@ -13,8 +13,9 @@ content:
     type: collection
     path: src/content/articles
     view:
-      fields: [title, section, date, verified]
+      fields: [title, section, status, date]
       sort: [date]
+      primary: title
     fields:
       - name: title
         label: Headline
