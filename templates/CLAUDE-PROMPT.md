@@ -1,63 +1,66 @@
-# The weekly Claude prompt (paste this to start an issue)
+# The one weekly prompt
 
-This is the reusable instruction block. Open Claude Code in the repository and
-paste the block below to produce a week's drafts. The templates live in
-`templates/_TEMPLATES.md`; this prompt tells Claude how to use them.
+Every week, open Claude Code in this repository and paste the single block
+between the lines below. Nothing else. It triggers the whole pipeline: research,
+drafting, the accuracy gate, and a push to GitHub as DRAFTS. The drafts appear
+in your CMS for review. When you flip one to Published, the site rebuilds and
+attaches a fresh Pexels photo (or an in-house illustration if none fits). You
+never paste the rules again; they live here and Claude reads them.
 
-Drafts are written with `status: draft`, so they appear only in local preview
-(`npm run dev`), never on the live site, until you review them and switch each
-to `status: published`. Nothing you have not approved can go live.
+Change only the date on the first line if you want. Everything else stays.
 
----
+------------------------------------------------------------------------
+Produce this week's issue of Phanda Mag for the week of {DATE}.
 
-You are drafting this week's issue of Phanda Mag, a weekly intelligence
-magazine for South African entrepreneurs covering procurement money flows,
-funding, competitions and capital strategy.
+Follow the full process and rules in templates/CLAUDE-PROMPT.md and
+templates/_TEMPLATES.md exactly. In short:
 
-Process, in order:
+1. Run `npm run gather`, read research/<today>/, and use your web search and
+   web fetch tools for anything in _fetch-manually.md. Draft only from real
+   fetched facts, never from memory.
+2. Write 5 to 7 pieces across the five sections in the fixed template shape.
+   Verify every number, date, name and rule against a source before writing it.
+   Two independent sources for any Ledger award figure or Winners profile. If a
+   piece will not verify, do not write it: tell me and log it in
+   killed-articles.md. If a whole section has no verified story this week, skip
+   that section (never invent one).
+3. Save each piece to src/content/articles/<slug>.md with status: draft and
+   full frontmatter and a Money Line. No em-dashes. British and SA English.
+4. For each scene-setting Capital, Ledger or Playbook piece, add one line to
+   data/photo-manifest.json mapping its slug to a short South African photo
+   query (for example "cape town harbour" or "rand banknotes"). Do NOT add
+   Winners or data/chart pieces: those keep illustration.
+5. Run `npm run check` and fix everything it flags.
+6. Commit and push to the working branch. Then tell me the slate, list any
+   pieces killed and why, and stop.
+------------------------------------------------------------------------
 
-1. Run `npm run gather` and read the dossier in `research/<today>/`. For any
-   source in `_fetch-manually.md`, use your web search and web fetch tools to
-   pull the current facts. Do not draft from memory.
-2. Propose a slate of 5 to 7 pieces using the fixed shape in
-   `templates/_TEMPLATES.md` (Capital, Ledger, Winners, Playbook, a short
-   second money story, The Wire, optional data piece).
-3. For each piece, verify every number, date, name and rule against a source
-   before writing it. Two independent sources for any Ledger award figure or
-   Winners profile. Where you cannot verify, do not write it: tell me, and I
-   will decide whether to kill it (log it in `killed-articles.md`).
-4. Write each piece into `src/content/articles/<slug>.md` with `status: draft`
-   and full frontmatter. Every article opens with a Money Line (one verified
-   figure, or the key date). Every factual claim is in the sources list.
-5. Do not use em-dashes. Use British and South African spelling. Write rand as
-   R2,5 million in prose and R2,5m in data labels.
-6. Leave `heroImage` empty (art is generated) unless a real scene clearly fits,
-   in which case add a line to `data/photo-manifest.json`.
-7. Run `npm run check`. Fix everything it flags. Then tell me the slate is ready
-   for review and list any pieces you killed and why.
+## The full process (Claude reads this; you do not need to)
+
+- The gate `npm run check` blocks the build on em-dashes, unsourced numbers, a
+  Money Line without a caption, verified-without-sources, or more than one
+  featured article. Green gate is required before pushing.
+- Drafts (status: draft) are invisible on the live site and appear in the CMS
+  and in local preview (`npm run dev`) only. Publishing is a human act.
+- On publish, the build runs `scripts/fetch-photos.mjs`: if a Pexels key is set
+  in the environment, it fetches a real, licence-clean South African photo for
+  each manifest slug that has no photo yet, rotates the choice by slug and week
+  so images differ, records the credit, and stamps heroImage. With no key, or if
+  a query finds nothing, the article keeps its in-house generated cover art.
+  Data pieces keep charts; Winners keep illustration (never a stock face).
 
 ## The house voice
 
 Write like The Economist with South African street sense: authoritative, plain,
-a little dry, never breathless. Rules:
+a little dry, never breathless. Short declarative sentences. Lead with the
+number that matters, then what it means for a founder. No hype, no exclamation
+marks, no "game-changer". Opinion only in The Playbook, earned with evidence.
+Every article useful enough to act on by Monday. Never invent a person, quote,
+success story or statistic: if it is not sourced, it does not exist.
 
-- Short declarative sentences carry the facts. One idea per sentence.
-- Lead with the number that matters, then explain what it means for a founder.
-- Address the reader as a working entrepreneur who is busy and sceptical.
-- No hype, no exclamation marks, no "game-changer", no "unlock your potential".
-- Opinion is allowed in The Playbook, but earn it with evidence.
-- Every article is useful: the reader should be able to act on it on Monday.
-- Warn about scams and dead ends honestly. Trust is the whole product.
-- Never invent a person, a quote, a success story or a statistic. If it is not
-  sourced, it does not exist.
+## When a category has no verified story
 
-## When a category has no verified story (important)
-
-The magazine never fabricates to fill a slot. If, after searching, there is no
-verifiable Winners story this week (no named, sourced winner), then skip the
-Winners section entirely for this issue. The homepage and section pages are
-built to handle a missing section gracefully: a section with no published
-articles simply does not appear on the homepage, and its section page shows
-"Articles for this section are in production." A shorter, true issue is correct.
-Do the same for any section: no verified material means no section that week,
-never an invented one.
+Skip the section entirely for that issue. The homepage and section pages handle
+a missing section gracefully: it simply does not appear, and its section page
+reads "Articles for this section are in production." A shorter true issue is
+correct. Never fabricate to fill a slot.

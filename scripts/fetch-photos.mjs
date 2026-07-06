@@ -45,7 +45,7 @@ for (const [slug, query] of Object.entries(manifest.photos)) {
     const saQuery = /south africa|johannesburg|cape town|durban|pretoria|township|sandton/i.test(query)
       ? query
       : `${query} south africa`;
-    const pick = await search(saQuery);
+    const pick = await search(saQuery, slug);
     if (!pick) {
       console.log(`[fetch-photos] no image for "${saQuery}" (${slug}), keeping cover art`);
       continue;
@@ -72,7 +72,7 @@ for (const [slug, query] of Object.entries(manifest.photos)) {
 if (added) writeFileSync(creditsPath, JSON.stringify(credits, null, 2) + '\n');
 console.log(`[fetch-photos] done, ${added} photo(s) fetched.`);
 
-async function search(q) {
+async function search(q, slug = '') {
   const pool = [];
   if (PEXELS) {
     try {
@@ -104,7 +104,15 @@ async function search(q) {
   }
   const usable = pool.filter((c) => c.downloadUrl);
   const safe = noPeopleDefault ? usable.filter((c) => !PEOPLE_WORDS.test(c.alt)) : usable;
-  return (safe.length ? safe : usable)[0];
+  const list = safe.length ? safe : usable;
+  if (!list.length) return undefined;
+  // Pick a varied result, not always the first, so different articles (and
+  // each week's new articles) get different images from the same kind of query.
+  // Seeded by slug + ISO week so a given article stays stable across rebuilds.
+  const week = Math.floor(Date.now() / (7 * 864e5));
+  let seed = week;
+  for (const ch of slug) seed = (seed * 31 + ch.charCodeAt(0)) % 100000;
+  return list[seed % list.length];
 }
 
 // Add heroImage to the article's frontmatter if it is not already set.
