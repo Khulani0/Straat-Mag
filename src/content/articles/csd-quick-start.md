@@ -1,18 +1,19 @@
 ---
 title: "Test draft: register on the CSD before you chase a tender"
-dek: "A short workflow test. This is a real, sourced tip, held as a draft so you can practise reviewing and publishing before it goes live."
-section: "playbook"
+dek: A short workflow test. This is a real, sourced tip, held as a draft so you
+  can practise reviewing and publishing before it goes live.
+section: playbook
 date: 2026-07-06
-readingTime: "2 min read"
+readingTime: 2 min read
 status: draft
 verified: true
 featured: false
-moneyLineStat: "R0"
-moneyLineCaption: "What it costs to register on the Central Supplier Database. Registration is free at csd.gov.za."
+moneyLineStat: R0
+moneyLineCaption: What it costs to register on the Central Supplier Database.
+  Registration is free at csd.gov.za.
 sources:
-  - "https://secure.csd.gov.za/Home/RegistrationProcess"
+  - https://secure.csd.gov.za/Home/RegistrationProcess
 ---
-
 This article is marked as a draft, so it appears in your CMS and in local preview, but not on the live site, until you publish it. Use it to practise the review workflow, then delete it or publish it.
 
 ## Why the CSD comes first
