@@ -14,7 +14,7 @@ artwork) working exactly as designed, at R0 hosting cost.
 ### Connecting an Afrihost domain to the Vercel site
 
 1. Buy the domain at Afrihost (or use one you own).
-2. In **Vercel**: open the phanda-mag project, go to **Settings, then Domains**,
+2. In **Vercel**: open the straatpreneur project, go to **Settings, then Domains**,
    type your domain (e.g. phandamag.co.za) and click **Add**. Vercel shows you
    the DNS records it needs.
 3. In **Afrihost ClientZone**: open your domain's **DNS management** and add

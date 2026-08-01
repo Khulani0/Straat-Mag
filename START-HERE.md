@@ -1,4 +1,4 @@
-# Phanda Mag: start here
+# Straatpreneur: start here
 
 Everything you need, in order. Do the three setups once. Then run the weekly
 loop forever.

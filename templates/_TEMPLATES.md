@@ -1,4 +1,4 @@
-# Phanda Mag issue template: fixed shape, every week
+# Straatpreneur issue template: fixed shape, every week
 
 The rigid weekly issue. Same five sections, same lengths, every week. This is
 what keeps production inside one half-day and stops scope creep from blowing
@@ -14,7 +14,7 @@ The standard weekly issue is SEVEN pieces:
 | 2 | The Ledger | 700 to 1,100 words | A procurement money-flow or awards story. |
 | 3 | Winners | 400 to 700 words | One verified, named winner. Skip only if none verifies. |
 | 4 | The Playbook | 700 to 1,100 words | Evergreen strategy. Can be drafted ahead and banked. |
-| 5 | Capital or Ledger | 400 to 700 words | A shorter second money story. |
+| 5 | The Blueprint | 500 to 800 words | One researched business idea to explore. Always included. |
 | 6 | The Wire | 250 to 400 words | 6 to 10 briefs, deadlines within 30 days first, one stat. |
 | 7 | Any | data or explainer | Optional chart-led piece when a dataset lands. |
 
@@ -159,6 +159,45 @@ How it actually works, grounded in published programme rules, not anecdote.
 The practical, ordered steps.
 
 Close with the discipline or rule that separates the founders who win.
+```
+
+## The Blueprint template
+
+```
+---
+title: "The Blueprint: [the business idea]"
+dek: ""
+section: "blueprint"
+date: 2026-MM-DD
+readingTime: "X min read"
+verified: false
+featured: false
+moneyLineStat: ""
+moneyLineCaption: ""
+heroImage: ""
+sources:
+  - ""
+---
+
+Every edition, The Blueprint puts one business idea on the table and tests it
+against real numbers. This is analysis of a market gap, not a profile of an
+existing company, and not investment advice.
+
+## The gap
+
+The verified market gap or unmet demand, with sourced figures.
+
+## The idea
+
+The business, and its revenue lines, concretely.
+
+## The numbers to sanity-check
+
+Honest arithmetic the reader must do: demand, pricing, costs, competition.
+
+## Why it fits a straatpreneur
+
+Why it suits a founder with little capital. Close with the honest catch.
 ```
 
 ## The Wire template

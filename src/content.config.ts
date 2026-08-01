@@ -10,7 +10,7 @@ const articles = defineCollection({
     title: z.string(),
     // One-sentence standfirst under the headline.
     dek: z.string(),
-    section: z.enum(['ledger', 'capital', 'winners', 'playbook', 'wire']),
+    section: z.enum(['ledger', 'capital', 'winners', 'playbook', 'blueprint', 'wire']),
     date: z.coerce.date(),
     // e.g. "6 min read"
     readingTime: z.string(),

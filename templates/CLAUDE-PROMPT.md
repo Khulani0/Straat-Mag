@@ -10,7 +10,7 @@ never paste the rules again; they live here and Claude reads them.
 Change only the date on the first line if you want. Everything else stays.
 
 ------------------------------------------------------------------------
-Produce this week's issue of Phanda Mag for the week of {DATE}.
+Produce this week's issue of Straatpreneur for the week of {DATE}.
 
 Follow the full process and rules in templates/CLAUDE-PROMPT.md and
 templates/_TEMPLATES.md exactly. In short:
@@ -18,7 +18,8 @@ templates/_TEMPLATES.md exactly. In short:
 1. Run `npm run gather`, read research/<today>/, and use your web search and
    web fetch tools for anything in _fetch-manually.md. Draft only from real
    fetched facts, never from memory.
-2. Write 5 to 7 pieces across the five sections in the fixed template shape.
+2. Write 6 to 7 pieces across the six sections in the fixed template shape.
+   Always include one Blueprint piece (a researched business idea to explore).
    Verify every number, date, name and rule against a source before writing it.
    Two independent sources for any Ledger award figure or Winners profile. If a
    piece will not verify, do not write it: tell me and log it in

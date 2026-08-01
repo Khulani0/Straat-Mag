@@ -39,6 +39,8 @@ content:
               label: Winners
             - value: playbook
               label: The Playbook
+            - value: blueprint
+              label: The Blueprint
             - value: wire
               label: The Wire
       - name: date

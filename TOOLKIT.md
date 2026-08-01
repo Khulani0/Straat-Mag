@@ -1,4 +1,4 @@
-# The Phanda Mag production toolkit
+# The Straatpreneur production toolkit
 
 Everything needed to produce one accurate weekly issue in a half-day, with
 on-brand visuals and zero fabrication. Four tools plus the accuracy gate.

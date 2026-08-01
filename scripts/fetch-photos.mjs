@@ -1,4 +1,4 @@
-// Phanda Mag build-time photo fetcher.
+// Straatpreneur build-time photo fetcher.
 //
 // Runs in prebuild, before the art generator. For every article listed in
 // data/photo-manifest.json that does not already have a photo, it searches the

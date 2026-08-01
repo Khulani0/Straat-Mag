@@ -2,9 +2,9 @@
 // so they can be updated from the CMS without touching code.
 import settings from '../data/settings.json';
 
-export const SITE_TITLE = 'Phanda Mag';
+export const SITE_TITLE = 'Straatpreneur';
 export const SITE_DESCRIPTION =
-  'A weekly online intelligence magazine for South African entrepreneurs: public procurement money flows, government and private funding, entrepreneurship competitions, and capital-raising strategy.';
+  'A weekly online intelligence magazine for South African entrepreneurs: funding opportunities, thriving businesses, capital-raising strategy, public procurement money flows, and a fresh business idea to explore every edition.';
 
 export const ISSUE_NUMBER = settings.issueNumber;
 export const ISSUE_DATE = settings.issueDate;
@@ -34,6 +34,12 @@ export const SECTIONS = [
     name: 'The Playbook',
     description:
       'Evergreen strategy. How to raise, how to pitch, how to get bid-ready, how competitions actually judge.',
+  },
+  {
+    slug: 'blueprint',
+    name: 'The Blueprint',
+    description:
+      'One researched business idea to explore each edition: the market gap, what it takes to start, and the numbers, grounded in verified data.',
   },
   {
     slug: 'wire',

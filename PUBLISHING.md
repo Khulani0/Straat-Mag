@@ -54,7 +54,7 @@ Kill Rule) lives in `WEEKLY-SOP.md`.
 
 The site already carries the Vercel Web Analytics script. To switch it on:
 
-1. Go to **vercel.com**, log in, and open your **phanda-mag** project.
+1. Go to **vercel.com**, log in, and open your **straatpreneur** project.
 2. Click the **Analytics** tab.
 3. Click **Enable**. Free plan is fine.
 

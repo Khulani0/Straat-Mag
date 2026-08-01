@@ -1,4 +1,4 @@
-// Phanda Mag automatic hero art generator.
+// Straatpreneur automatic hero art generator.
 //
 // Runs before every build (see "prebuild" in package.json). For every article
 // in src/content/articles/, if its hero SVG does not exist yet in public/,
@@ -25,6 +25,7 @@ const SECTION_LABELS = {
   capital: 'CAPITAL',
   winners: 'WINNERS',
   playbook: 'THE PLAYBOOK',
+  blueprint: 'THE BLUEPRINT',
   wire: 'THE WIRE',
 };
 
@@ -120,7 +121,7 @@ function generateHero({ slug, title, section, stat }) {
   const dark = DARK_SECTIONS.has(section);
   const bg = dark ? INK : PAPER;
   const fg = dark ? PAPER : INK;
-  const label = SECTION_LABELS[section] ?? 'PHANDA MAG';
+  const label = SECTION_LABELS[section] ?? 'STRAATPRENEUR';
   const h = hashOf(slug);
   const deco = motif(h % 4, fg, h % 3 === 0 ? RED : YELLOW);
 
@@ -156,7 +157,7 @@ function generateHero({ slug, title, section, stat }) {
   <g font-family="Arial, Helvetica, sans-serif">
     <text x="66" y="80" font-size="19" font-weight="bold" fill="${dark ? YELLOW : SLATE}" letter-spacing="4">${esc(label)}</text>
     ${centrepiece}
-    <text x="66" y="462" font-size="15" font-weight="bold" fill="${SLATE}" letter-spacing="2">PHANDA MAG · EVERY FIGURE SOURCED</text>
+    <text x="66" y="462" font-size="15" font-weight="bold" fill="${SLATE}" letter-spacing="2">STRAATPRENEUR · EVERY FIGURE SOURCED</text>
   </g>
 </svg>
 `;

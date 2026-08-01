@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="The Blueprint: a bid-readiness concierge for the R1,07 trillion pipeline">
+  <rect width="1200" height="500" fill="#FAFAF6"/>
+  <rect x="960" y="60" width="150" height="46" fill="#141414" opacity="0.16"/><rect x="960" y="122" width="132" height="84" fill="#F2B705" opacity="0.95"/><rect x="960" y="222" width="114" height="62" fill="#141414" opacity="0.16"/><rect x="960" y="300" width="96" height="108" fill="#141414" opacity="0.16"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="66" y="80" font-size="19" font-weight="bold" fill="#5C6670" letter-spacing="4">THE BLUEPRINT</text>
+    
+    <text x="66" y="228.51749999999998" font-size="110.05" font-weight="bold" fill="#141414" letter-spacing="-3">R1,07 trillion</text>
+    <rect x="70" y="248.51749999999998" width="420" height="12" fill="#F2B705"/>
+    <text x="70" y="368" font-size="24" font-weight="bold" fill="#141414" opacity="0.85">THE BLUEPRINT: A BID-READINESS</text><text x="70" y="402" font-size="24" font-weight="bold" fill="#141414" opacity="0.85">CONCIERGE FOR THE R1,07 TRILLION</text>
+    <text x="66" y="462" font-size="15" font-weight="bold" fill="#5C6670" letter-spacing="2">STRAATPRENEUR · EVERY FIGURE SOURCED</text>
+  </g>
+</svg>

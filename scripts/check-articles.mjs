@@ -1,4 +1,4 @@
-// Phanda Mag accuracy gate. Runs before every build (prebuild).
+// Straatpreneur accuracy gate. Runs before every build (prebuild).
 //
 // This is the brand's insurance policy: "one invented statistic in a
 // procurement briefing ends the brand." It cannot detect a fabricated number
